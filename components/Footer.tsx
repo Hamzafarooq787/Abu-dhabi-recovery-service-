@@ -1,7 +1,6 @@
 "use client";
 
 import Link from "next/link";
-import Image from "next/image";
 import { Phone, Mail, MapPin } from "lucide-react";
 import { siteConfig } from "../config/site";
 
@@ -15,14 +14,16 @@ export default function Footer() {
 
           {/* Brand */}
           <div>
-            <Link href="/" className="inline-block mb-4">
-              <Image
-                src="/logo.png"
-                alt="Abu Dhabi Recovery Service"
-                width={160}
-                height={53}
-                className="h-10 w-auto"
-              />
+            <Link href="/" className="inline-flex items-center gap-2 mb-4">
+              <span
+                className="flex h-9 w-9 shrink-0 items-center justify-center rounded-lg font-black text-black"
+                style={{ backgroundColor: siteConfig.brandColor }}
+              >
+                A
+              </span>
+              <span className="text-base font-bold text-white">
+                Abu Dhabi Recovery Service
+              </span>
             </Link>
 
             <p className="mt-4 text-sm leading-relaxed">
@@ -37,22 +38,22 @@ export default function Footer() {
             <h4 className="text-white font-semibold mb-4">Quick Links</h4>
             <ul className="space-y-2 text-sm">
               <li>
-                <Link href="/" className="hover:text-[#7CFC00]">
+                <Link href="/" className="hover:text-[#FF6A1A]">
                   Home
                 </Link>
               </li>
               <li>
-                <Link href="/services" className="hover:text-[#7CFC00]">
+                <Link href="/services" className="hover:text-[#FF6A1A]">
                   Services
                 </Link>
               </li>
               <li>
-                <Link href="/about" className="hover:text-[#7CFC00]">
+                <Link href="/about" className="hover:text-[#FF6A1A]">
                   About Us
                 </Link>
               </li>
               <li>
-                <Link href="/contact" className="hover:text-[#7CFC00]">
+                <Link href="/contact" className="hover:text-[#FF6A1A]">
                   Contact
                 </Link>
               </li>
@@ -64,37 +65,37 @@ export default function Footer() {
             <h4 className="text-white font-semibold mb-4">Our Services</h4>
             <ul className="space-y-2 text-sm">
               <li>
-                <Link href="/services/recovery-services" className="hover:text-[#7CFC00]">
+                <Link href="/services/recovery-services" className="hover:text-[#FF6A1A]">
                   Recovery Services
                 </Link>
               </li>
               <li>
-                <Link href="/services/towing-services" className="hover:text-[#7CFC00]">
+                <Link href="/services/towing-services" className="hover:text-[#FF6A1A]">
                   Towing Services
                 </Link>
               </li>
               <li>
-                <Link href="/services/roadside-assistance" className="hover:text-[#7CFC00]">
+                <Link href="/services/roadside-assistance" className="hover:text-[#FF6A1A]">
                   Roadside Assistance
                 </Link>
               </li>
               <li>
-                <Link href="/services/fuel-delivery" className="hover:text-[#7CFC00]">
+                <Link href="/services/fuel-delivery" className="hover:text-[#FF6A1A]">
                   Fuel Delivery
                 </Link>
               </li>
               <li>
-                <Link href="/services/tyre-change" className="hover:text-[#7CFC00]">
+                <Link href="/services/tyre-change" className="hover:text-[#FF6A1A]">
                   Tyre Change
                 </Link>
               </li>
               <li>
-                <Link href="/services/battery-boost" className="hover:text-[#7CFC00]">
+                <Link href="/services/battery-boost" className="hover:text-[#FF6A1A]">
                   Battery Boost
                 </Link>
               </li>
               <li>
-                <Link href="/services/off-road-recovery-services" className="hover:text-[#7CFC00]">
+                <Link href="/services/off-road-recovery-services" className="hover:text-[#FF6A1A]">
                   Off-Road Recovery Services
                 </Link>
               </li>
@@ -110,7 +111,7 @@ export default function Footer() {
                 <Phone size={16} />
                 <Link
                   href="/contact"
-                  className="hover:text-[#7CFC00]"
+                  className="hover:text-[#FF6A1A]"
                 >
                   {siteConfig.phoneDisplay}
                 </Link>
@@ -120,7 +121,7 @@ export default function Footer() {
                 <Mail size={16} />
                 <Link
                   href="/contact"
-                  className="hover:text-[#7CFC00]"
+                  className="hover:text-[#FF6A1A]"
                 >
                   {siteConfig.links.email}
                 </Link>
@@ -130,7 +131,7 @@ export default function Footer() {
                 <MapPin size={16} />
                 <Link
                   href="/contact"
-                  className="hover:text-[#7CFC00]"
+                  className="hover:text-[#FF6A1A]"
                 >
                   {siteConfig.location} and surrounding areas
                 </Link>

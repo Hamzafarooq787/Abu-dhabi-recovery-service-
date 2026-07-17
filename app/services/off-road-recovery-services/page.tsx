@@ -11,7 +11,7 @@ export default function Page() {
       eyebrow="Specialist Recovery"
       title="Off-Road Recovery Services in Abu Dhabi"
       subtitle="Stuck in sand, mud, or rough terrain? Our specialist off-road recovery team is equipped to get your vehicle out safely, wherever you are."
-      heroImage="/services/service-2.jpg"
+      heroBackground="linear-gradient(145deg, #0b0d10 0%, #331a00 50%, #FF6A1A 135%)"
       highlights={[
         "Specialist off-road recovery equipment",
         "Desert and rough-terrain experience",

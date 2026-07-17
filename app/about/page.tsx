@@ -3,9 +3,7 @@
 import Footer from "@/components/Footer";
 import Header from "@/components/Header";
 import { siteConfig } from "@/config/site";
-import { ShieldCheck, Wrench, Clock, Users } from "lucide-react";
-import Image from "next/image";
-import Link from "next/link";
+import { ShieldCheck, Wrench, Clock, Users, Truck } from "lucide-react";
 
 export default function AboutUsPage() {
   return (
@@ -57,14 +55,14 @@ export default function AboutUsPage() {
               </p>
             </div>
 
-            <div className="relative rounded-3xl overflow-hidden border border-white/10">
-              <Image
-                src="/background/about-us.jpg"
-                alt="Vehicle recovery service"
-                width={700}
-                height={500}
-                className="object-cover w-full h-full"
-              />
+            <div
+              className="relative rounded-3xl overflow-hidden border border-white/10 h-[500px] flex items-center justify-center"
+              style={{
+                background:
+                  "linear-gradient(135deg, #0b0d10 0%, #2a1200 55%, #FF6A1A 130%)",
+              }}
+            >
+              <Truck className="text-black/20" size={160} strokeWidth={1.2} />
             </div>
           </div>
         </section>
@@ -136,8 +134,8 @@ export default function AboutUsPage() {
 
               <div className="text-center">
                 <div className="mx-auto w-14 h-14 rounded-full flex items-center justify-center mb-6"
-                  style={{ backgroundColor: "rgba(124,252,0,0.15)" }}>
-                  <ShieldCheck className="text-[#7CFC00]" />
+                  style={{ backgroundColor: "rgba(255,106,26,0.15)" }}>
+                  <ShieldCheck className="text-[#FF6A1A]" />
                 </div>
                 <h4 className="font-semibold mb-2">Reliability</h4>
                 <p className="text-gray-400 text-sm">
@@ -147,8 +145,8 @@ export default function AboutUsPage() {
 
               <div className="text-center">
                 <div className="mx-auto w-14 h-14 rounded-full flex items-center justify-center mb-6"
-                  style={{ backgroundColor: "rgba(124,252,0,0.15)" }}>
-                  <Wrench className="text-[#7CFC00]" />
+                  style={{ backgroundColor: "rgba(255,106,26,0.15)" }}>
+                  <Wrench className="text-[#FF6A1A]" />
                 </div>
                 <h4 className="font-semibold mb-2">Professional Standards</h4>
                 <p className="text-gray-400 text-sm">
@@ -158,8 +156,8 @@ export default function AboutUsPage() {
 
               <div className="text-center">
                 <div className="mx-auto w-14 h-14 rounded-full flex items-center justify-center mb-6"
-                  style={{ backgroundColor: "rgba(124,252,0,0.15)" }}>
-                  <Clock className="text-[#7CFC00]" />
+                  style={{ backgroundColor: "rgba(255,106,26,0.15)" }}>
+                  <Clock className="text-[#FF6A1A]" />
                 </div>
                 <h4 className="font-semibold mb-2">Fast Response</h4>
                 <p className="text-gray-400 text-sm">
@@ -169,8 +167,8 @@ export default function AboutUsPage() {
 
               <div className="text-center">
                 <div className="mx-auto w-14 h-14 rounded-full flex items-center justify-center mb-6"
-                  style={{ backgroundColor: "rgba(124,252,0,0.15)" }}>
-                  <Users className="text-[#7CFC00]" />
+                  style={{ backgroundColor: "rgba(255,106,26,0.15)" }}>
+                  <Users className="text-[#FF6A1A]" />
                 </div>
                 <h4 className="font-semibold mb-2">Customer First</h4>
                 <p className="text-gray-400 text-sm">
@@ -185,7 +183,7 @@ export default function AboutUsPage() {
         {/* CTA */}
         <section
           className="py-24"
-          style={{ backgroundColor: "#7CFC00" }}
+          style={{ backgroundColor: "#FF6A1A" }}
         >
           <div className="max-w-3xl mx-auto px-6 text-center text-black">
             <h2 className="text-3xl font-bold mb-4">

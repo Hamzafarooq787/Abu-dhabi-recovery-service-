@@ -11,9 +11,8 @@ export default function Hero() {
 <section
   className="relative w-full pt-24 md:pt-32 min-h-[90vh] flex items-center"
   style={{
-    backgroundImage: "url('/background/hero-bg.jpg')",
-    backgroundSize: "cover",
-    backgroundPosition: "center",
+    background:
+      "radial-gradient(circle at 20% 20%, rgba(255,106,26,0.35) 0%, transparent 45%), radial-gradient(circle at 85% 80%, rgba(255,106,26,0.25) 0%, transparent 50%), linear-gradient(160deg, #0b0d10 0%, #1a1300 60%, #2a1200 100%)",
   }}
 >
   {/* Dark overlay */}

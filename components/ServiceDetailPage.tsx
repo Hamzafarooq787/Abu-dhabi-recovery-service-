@@ -9,7 +9,7 @@ type Props = {
   eyebrow?: string;
   title: string;
   subtitle: string;
-  heroImage: string;
+  heroBackground: string; // CSS background value, e.g. a gradient
 
   highlights: string[];
   bullets: Bullet[];
@@ -26,7 +26,7 @@ export default function ServiceDetailPage({
   eyebrow = "Service in Abu Dhabi",
   title,
   subtitle,
-  heroImage,
+  heroBackground,
   highlights,
   bullets,
   ctaTitle,
@@ -40,8 +40,8 @@ export default function ServiceDetailPage({
       {/* Hero */}
       <section className="relative">
         <div
-          className="absolute inset-0 bg-cover bg-center"
-          style={{ backgroundImage: `url(${heroImage})` }}
+          className="absolute inset-0"
+          style={{ background: heroBackground }}
         />
         <div className="absolute inset-0 bg-black/70" />
 

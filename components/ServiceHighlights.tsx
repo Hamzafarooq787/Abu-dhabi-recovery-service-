@@ -10,7 +10,7 @@ export default function ServiceHighlights() {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 text-white">
 
           {/* Feature 1 */}
-          <div className="group bg-[#12151b] rounded-2xl p-6 border border-white/5 transition hover:-translate-y-1 hover:border-[#7CFC00]">
+          <div className="group bg-[#12151b] rounded-2xl p-6 border border-white/5 transition hover:-translate-y-1 hover:border-[#FF6A1A]">
             <div
               className="w-12 h-12 flex items-center justify-center rounded-xl mb-4"
               style={{ backgroundColor: siteConfig.brandColor }}
@@ -29,7 +29,7 @@ export default function ServiceHighlights() {
           </div>
 
           {/* Feature 2 */}
-          <div className="group bg-[#12151b] rounded-2xl p-6 border border-white/5 transition hover:-translate-y-1 hover:border-[#7CFC00]">
+          <div className="group bg-[#12151b] rounded-2xl p-6 border border-white/5 transition hover:-translate-y-1 hover:border-[#FF6A1A]">
             <div
               className="w-12 h-12 flex items-center justify-center rounded-xl mb-4"
               style={{ backgroundColor: siteConfig.brandColor }}
@@ -48,7 +48,7 @@ export default function ServiceHighlights() {
           </div>
 
           {/* Feature 3 */}
-          <div className="group bg-[#12151b] rounded-2xl p-6 border border-white/5 transition hover:-translate-y-1 hover:border-[#7CFC00]">
+          <div className="group bg-[#12151b] rounded-2xl p-6 border border-white/5 transition hover:-translate-y-1 hover:border-[#FF6A1A]">
             <div
               className="w-12 h-12 flex items-center justify-center rounded-xl mb-4"
               style={{ backgroundColor: siteConfig.brandColor }}

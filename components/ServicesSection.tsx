@@ -7,43 +7,43 @@ const services = [
   {
     title: "Recovery Services",
     desc: "Fast, professional vehicle recovery wherever you are stranded across Abu Dhabi.",
-    image: "/services/service-1.jpg",
+    background: "linear-gradient(135deg, #0b0d10 0%, #331a00 55%, #FF6A1A 140%)",
     href: "/services/recovery-services",
   },
   {
     title: "Towing Services",
     desc: "Safe towing for cars, vans, and light commercial vehicles to your destination of choice.",
-    image: "/services/service-2.jpg",
+    background: "radial-gradient(circle at 25% 30%, rgba(255,106,26,0.5) 0%, transparent 55%), linear-gradient(160deg, #0b0d10 0%, #1a1000 100%)",
     href: "/services/towing-services",
   },
   {
     title: "Roadside Assistance",
     desc: "Round-the-clock roadside support for breakdowns and emergencies, day or night.",
-    image: "/services/service-3.jpg",
+    background: "linear-gradient(150deg, #0b0d10 0%, #2a1200 60%, #FF7A29 150%)",
     href: "/services/roadside-assistance",
   },
   {
     title: "Fuel Delivery",
     desc: "Run out of fuel? We deliver directly to your location so you can get back on the road.",
-    image: "/services/service-4.jpg",
+    background: "radial-gradient(circle at 75% 25%, rgba(255,106,26,0.45) 0%, transparent 55%), linear-gradient(170deg, #0b0d10 0%, #1f1400 100%)",
     href: "/services/fuel-delivery",
   },
   {
     title: "Tyre Change",
     desc: "Quick, on-site tyre changes carried out by experienced professionals.",
-    image: "/services/tyre-replacement1.jpg",
+    background: "linear-gradient(140deg, #0b0d10 0%, #2e1400 55%, #FF6A1A 145%)",
     href: "/services/tyre-change",
   },
   {
     title: "Battery Boost",
     desc: "Flat battery? We jump-start or replace it on the spot to get you moving again.",
-    image: "/services/service-6.jpg",
+    background: "radial-gradient(circle at 30% 70%, rgba(255,122,41,0.5) 0%, transparent 55%), linear-gradient(160deg, #0b0d10 0%, #1a1300 100%)",
     href: "/services/battery-boost",
   },
   {
     title: "Off-Road Recovery Services",
     desc: "Specialist recovery for vehicles stuck off-road in sand, mud, or rough terrain.",
-    image: "/services/mobile-tyre-fitting.jpg",
+    background: "linear-gradient(145deg, #0b0d10 0%, #331a00 50%, #FF6A1A 135%)",
     href: "/services/off-road-recovery-services",
   },
 ];
@@ -79,20 +79,19 @@ export default function ServicesSection() {
                 border border-white/5
                 transition-all duration-300
                 hover:-translate-y-2
-                hover:shadow-[0_0_30px_rgba(124,252,0,0.15)]
-                hover:border-[#7CFC00]
+                hover:shadow-[0_0_30px_rgba(255,106,26,0.15)]
+                hover:border-[#FF6A1A]
               "
             >
-              {/* Image */}
+              {/* Visual */}
               <div className="overflow-hidden">
                 <div
                   className="
                     h-64 sm:h-72
-                    bg-cover bg-center
                     transition-transform duration-500
                     group-hover:scale-110
                   "
-                  style={{ backgroundImage: `url(${service.image})` }}
+                  style={{ background: service.background }}
                 />
               </div>
 
@@ -102,7 +101,7 @@ export default function ServicesSection() {
                   className="
                     text-lg font-semibold text-white
                     transition-colors duration-300
-                    group-hover:text-[#7CFC00]
+                    group-hover:text-[#FF6A1A]
                   "
                 >
                   {service.title}
@@ -125,7 +124,7 @@ export default function ServicesSection() {
                       className="
         inline-block text-sm font-semibold cursor-pointer
         transition-all duration-300
-        group-hover:text-[#7CFC00]
+        group-hover:text-[#FF6A1A]
         group-hover:tracking-wide
       "
                       style={{ color: siteConfig.brandColor }}
