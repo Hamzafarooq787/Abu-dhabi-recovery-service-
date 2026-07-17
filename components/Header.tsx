@@ -2,7 +2,6 @@
 
 import { useState } from "react";
 import Link from "next/link";
-import Image from "next/image";
 import { siteConfig } from "../config/site";
 
 export default function Header() {
@@ -16,23 +15,24 @@ export default function Header() {
     <div className="hidden md:grid grid-cols-3 items-center">
       
       {/* Left: Logo */}
-      <Link href="/" className="flex items-center">
-        <Image
-          src="/logo.png"
-          alt="Abu Dhabi Recovery Service"
-          width={180}
-          height={60}
-          className="h-12 w-auto"
-          priority
-        />
+      <Link href="/" className="flex items-center gap-2">
+        <span
+          className="flex h-10 w-10 shrink-0 items-center justify-center rounded-lg font-black text-black"
+          style={{ backgroundColor: siteConfig.brandColor }}
+        >
+          A
+        </span>
+        <span className="text-base font-bold leading-tight text-white whitespace-nowrap">
+          Abu Dhabi Recovery Service
+        </span>
       </Link>
 
       {/* Center: Navigation */}
       <nav className="flex justify-center gap-10 text-base font-medium">
-        <Link href="/" className="text-[#7CFC00] hover:text-[#7CFC00]/80 transition-colors">Home</Link>
-        <Link href="/services" className="hover:text-[#7CFC00] transition-colors">Services</Link>
-        <Link href="/about" className="hover:text-[#7CFC00] transition-colors">About Us</Link>
-        <Link href="/contact" className="hover:text-[#7CFC00] transition-colors">Contact</Link>
+        <Link href="/" className="text-[#FF6A1A] hover:text-[#FF6A1A]/80 transition-colors">Home</Link>
+        <Link href="/services" className="hover:text-[#FF6A1A] transition-colors">Services</Link>
+        <Link href="/about" className="hover:text-[#FF6A1A] transition-colors">About Us</Link>
+        <Link href="/contact" className="hover:text-[#FF6A1A] transition-colors">Contact</Link>
       </nav>
 
      
@@ -42,15 +42,16 @@ export default function Header() {
     <div className="flex md:hidden items-center justify-between">
 
       {/* Logo */}
-      <Link href="/" className="flex items-center">
-        <Image
-          src="/logo.png"
-          alt="Abu Dhabi Recovery Service"
-          width={160}
-          height={53}
-          className="h-10 w-auto"
-          priority
-        />
+      <Link href="/" className="flex items-center gap-2">
+        <span
+          className="flex h-9 w-9 shrink-0 items-center justify-center rounded-lg font-black text-black"
+          style={{ backgroundColor: siteConfig.brandColor }}
+        >
+          A
+        </span>
+        <span className="text-sm font-bold leading-tight text-white">
+          Abu Dhabi Recovery Service
+        </span>
       </Link>
 
       {/* Mobile buttons */}
@@ -75,28 +76,28 @@ export default function Header() {
         <Link 
           href="/" 
           onClick={() => setOpen(false)} 
-          className="py-3 px-4 text-lg font-medium hover:text-[#7CFC00] hover:bg-white/5 rounded-lg transition-colors"
+          className="py-3 px-4 text-lg font-medium hover:text-[#FF6A1A] hover:bg-white/5 rounded-lg transition-colors"
         >
           Home
         </Link>
         <Link 
           href="/services" 
           onClick={() => setOpen(false)} 
-          className="py-3 px-4 text-lg font-medium hover:text-[#7CFC00] hover:bg-white/5 rounded-lg transition-colors"
+          className="py-3 px-4 text-lg font-medium hover:text-[#FF6A1A] hover:bg-white/5 rounded-lg transition-colors"
         >
           Services
         </Link>
         <Link 
           href="/about" 
           onClick={() => setOpen(false)} 
-          className="py-3 px-4 text-lg font-medium hover:text-[#7CFC00] hover:bg-white/5 rounded-lg transition-colors"
+          className="py-3 px-4 text-lg font-medium hover:text-[#FF6A1A] hover:bg-white/5 rounded-lg transition-colors"
         >
           About Us
         </Link>
         <Link 
           href="/contact" 
           onClick={() => setOpen(false)} 
-          className="py-3 px-4 text-lg font-medium hover:text-[#7CFC00] hover:bg-white/5 rounded-lg transition-colors"
+          className="py-3 px-4 text-lg font-medium hover:text-[#FF6A1A] hover:bg-white/5 rounded-lg transition-colors"
         >
           Contact
         </Link>

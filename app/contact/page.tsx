@@ -10,7 +10,7 @@ export default function ContactPage() {
     <>
     <Header/>
       {/* HERO */}
-      <section className="bg-[#7CFC00] py-24">
+      <section className="bg-[#FF6A1A] py-24">
         <div className="max-w-7xl mx-auto px-6 sm:px-10 lg:px-16">
           <h1 className="text-4xl md:text-5xl font-bold text-black max-w-3xl">
             Get in Touch With Abu Dhabi Recovery Service
@@ -38,8 +38,8 @@ export default function ContactPage() {
           <div className="grid grid-cols-1 md:grid-cols-3 gap-10">
 
             {/* CALL */}
-            <div className="bg-[#12151b] rounded-2xl p-8 border border-white/5 hover:border-[#7CFC00] transition">
-              <Phone className="text-[#7CFC00]" size={28} />
+            <div className="bg-[#12151b] rounded-2xl p-8 border border-white/5 hover:border-[#FF6A1A] transition">
+              <Phone className="text-[#FF6A1A]" size={28} />
               <h3 className="mt-6 text-xl font-semibold text-white">Call Us</h3>
               <p className="mt-3 text-gray-400 text-sm">
                 Speak directly with our team for immediate recovery assistance or pricing.
@@ -48,15 +48,15 @@ export default function ContactPage() {
               <a
                 href={siteConfig.links.telLink}
                 onClick={() => (window as any).gtag_report_conversion?.(siteConfig.links.telLink)}
-                className="inline-flex items-center gap-2 mt-6 text-black bg-[#7CFC00] px-5 py-3 rounded-full text-sm font-semibold"
+                className="inline-flex items-center gap-2 mt-6 text-black bg-[#FF6A1A] px-5 py-3 rounded-full text-sm font-semibold"
               >
                 {siteConfig.phoneDisplay} <ArrowRight size={16} />
               </a>
             </div>
 
             {/* WHATSAPP */}
-            <div className="bg-[#12151b] rounded-2xl p-8 border border-white/5 hover:border-[#7CFC00] transition">
-              <MessageCircle className="text-[#7CFC00]" size={28} />
+            <div className="bg-[#12151b] rounded-2xl p-8 border border-white/5 hover:border-[#FF6A1A] transition">
+              <MessageCircle className="text-[#FF6A1A]" size={28} />
               <h3 className="mt-6 text-xl font-semibold text-white">WhatsApp</h3>
               <p className="mt-3 text-gray-400 text-sm">
                 Message us for quick replies, availability, and location confirmation.
@@ -66,15 +66,15 @@ export default function ContactPage() {
                 href={siteConfig.links.whatsappLink}
                 onClick={() => (window as any).gtag_report_conversion?.(siteConfig.links.whatsappLink)}
                 target="_blank"
-                className="inline-flex items-center gap-2 mt-6 text-black bg-[#7CFC00] px-5 py-3 rounded-full text-sm font-semibold"
+                className="inline-flex items-center gap-2 mt-6 text-black bg-[#FF6A1A] px-5 py-3 rounded-full text-sm font-semibold"
               >
                 Start Chat <ArrowRight size={16} />
               </a>
             </div>
 
             {/* EMAIL */}
-            <div className="bg-[#12151b] rounded-2xl p-8 border border-white/5 hover:border-[#7CFC00] transition">
-              <Mail className="text-[#7CFC00]" size={28} />
+            <div className="bg-[#12151b] rounded-2xl p-8 border border-white/5 hover:border-[#FF6A1A] transition">
+              <Mail className="text-[#FF6A1A]" size={28} />
               <h3 className="mt-6 text-xl font-semibold text-white">Email Us</h3>
               <p className="mt-3 text-gray-400 text-sm">
                 Ideal for general enquiries, bookings, or non-urgent requests.
@@ -82,7 +82,7 @@ export default function ContactPage() {
 
               <a
                 href={`mailto:${siteConfig.links.email}`}
-                className="inline-flex items-center gap-2 mt-6 text-[#7CFC00] text-sm font-medium"
+                className="inline-flex items-center gap-2 mt-6 text-[#FF6A1A] text-sm font-medium"
               >
                 {siteConfig.links.email} <ArrowRight size={16} />
               </a>
@@ -98,7 +98,7 @@ export default function ContactPage() {
 
           {/* HOURS */}
           <div className="bg-[#12151b] rounded-2xl p-8 border border-white/5">
-            <Clock className="text-[#7CFC00]" size={28} />
+            <Clock className="text-[#FF6A1A]" size={28} />
             <h3 className="mt-6 text-2xl font-semibold text-white">Service Availability</h3>
 
             <ul className="mt-6 space-y-3 text-sm text-gray-400">
@@ -110,7 +110,7 @@ export default function ContactPage() {
 
           {/* LOCATION */}
           <div className="bg-[#12151b] rounded-2xl p-8 border border-white/5">
-            <MapPin className="text-[#7CFC00]" size={28} />
+            <MapPin className="text-[#FF6A1A]" size={28} />
             <h3 className="mt-6 text-2xl font-semibold text-white">
               Service Coverage
             </h3>
@@ -129,7 +129,7 @@ export default function ContactPage() {
       </section>
 
       {/* CTA */}
-      <section className="bg-[#7CFC00] py-20">
+      <section className="bg-[#FF6A1A] py-20">
         <div className="max-w-7xl mx-auto px-6 sm:px-10 lg:px-16 text-center">
           <h2 className="text-3xl md:text-4xl font-bold text-black">
             Need Immediate Vehicle Recovery?
@@ -141,7 +141,7 @@ export default function ContactPage() {
           <a
             href={siteConfig.links.telLink}
             onClick={() => (window as any).gtag_report_conversion?.(siteConfig.links.telLink)}
-            className="inline-flex items-center gap-2 mt-8 bg-black text-[#7CFC00] px-8 py-4 rounded-full font-semibold"
+            className="inline-flex items-center gap-2 mt-8 bg-black text-[#FF6A1A] px-8 py-4 rounded-full font-semibold"
           >
             Call Now <ArrowRight size={18} />
           </a>

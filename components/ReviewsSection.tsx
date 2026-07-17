@@ -59,8 +59,8 @@ export default function ReviewsSection() {
                 mx-auto
                 transition-all duration-300
                 hover:-translate-y-2
-                hover:border-[#7CFC00]
-                hover:shadow-[0_0_25px_rgba(124,252,0,0.12)]
+                hover:border-[#FF6A1A]
+                hover:shadow-[0_0_25px_rgba(255,106,26,0.12)]
               "
             >
               {/* Stars */}
@@ -97,7 +97,7 @@ export default function ReviewsSection() {
               inline-flex items-center gap-2
               text-sm font-semibold
               transition-colors duration-300
-              hover:text-[#7CFC00]
+              hover:text-[#FF6A1A]
             "
             style={{ color: siteConfig.brandColor }}
           >

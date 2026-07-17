@@ -11,7 +11,7 @@ export default function Page() {
       eyebrow="Recovery Near Me"
       title="Vehicle Recovery Services in Abu Dhabi"
       subtitle="On-site vehicle recovery at your home, workplace, or roadside location. We arrive with the right equipment, recover safely, and confirm everything is ready before you set off."
-      heroImage="/services/mobile-tyre-fitting.jpg"
+      heroBackground="linear-gradient(135deg, #0b0d10 0%, #331a00 55%, #FF6A1A 140%)"
       highlights={[
         "Recovery at your location across Abu Dhabi",
         "Safe loading and secure transport",

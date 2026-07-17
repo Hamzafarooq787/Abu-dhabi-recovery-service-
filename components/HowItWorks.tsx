@@ -48,7 +48,7 @@ export default function HowItWorks() {
                   flex items-center justify-center
                   text-xl font-bold
                   mb-8
-                  shadow-[0_0_25px_rgba(124,252,0,0.25)]
+                  shadow-[0_0_25px_rgba(255,106,26,0.25)]
                 "
                 style={{
                   backgroundColor: siteConfig.brandColor,

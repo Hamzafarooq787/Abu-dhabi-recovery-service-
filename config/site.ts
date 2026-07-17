@@ -1,6 +1,6 @@
 export const siteConfig = {
   name: "Abu Dhabi Recovery Service",
-  brandColor: "#7CFC00",
+  brandColor: "#FF6A1A",
   location: "Musaffah, Abu Dhabi",
   phoneDisplay: "058 115 4109",
   links: {
