@@ -18,7 +18,7 @@ export default function Footer() {
             <Link href="/" className="inline-block mb-4">
               <Image
                 src="/logo.png"
-                alt="Meli's Mobile Tyre"
+                alt="Abu Dhabi Recovery Service"
                 width={160}
                 height={53}
                 className="h-10 w-auto"
@@ -26,8 +26,9 @@ export default function Footer() {
             </Link>
 
             <p className="mt-4 text-sm leading-relaxed">
-              Professional mobile tyre fitting service providing fast,
-              on-site assistance across Birmingham and nearby areas.
+              Professional vehicle recovery and roadside assistance
+              providing fast, on-site help across Musaffah, Abu Dhabi and
+              nearby areas.
             </p>
           </div>
 
@@ -63,23 +64,38 @@ export default function Footer() {
             <h4 className="text-white font-semibold mb-4">Our Services</h4>
             <ul className="space-y-2 text-sm">
               <li>
-                <Link href="/services" className="hover:text-[#7CFC00]">
-                  Mobile Tyre Fitting
+                <Link href="/services/recovery-services" className="hover:text-[#7CFC00]">
+                  Recovery Services
                 </Link>
               </li>
               <li>
-                <Link href="/services" className="hover:text-[#7CFC00]">
-                  Emergency Tyre Call-Out
+                <Link href="/services/towing-services" className="hover:text-[#7CFC00]">
+                  Towing Services
                 </Link>
               </li>
               <li>
-                <Link href="/services" className="hover:text-[#7CFC00]">
-                  24/7 Roadside Assistance
+                <Link href="/services/roadside-assistance" className="hover:text-[#7CFC00]">
+                  Roadside Assistance
                 </Link>
               </li>
               <li>
-                <Link href="/services" className="hover:text-[#7CFC00]">
-                  Same-Day Tyre Replacement
+                <Link href="/services/fuel-delivery" className="hover:text-[#7CFC00]">
+                  Fuel Delivery
+                </Link>
+              </li>
+              <li>
+                <Link href="/services/tyre-change" className="hover:text-[#7CFC00]">
+                  Tyre Change
+                </Link>
+              </li>
+              <li>
+                <Link href="/services/battery-boost" className="hover:text-[#7CFC00]">
+                  Battery Boost
+                </Link>
+              </li>
+              <li>
+                <Link href="/services/off-road-recovery-services" className="hover:text-[#7CFC00]">
+                  Off-Road Recovery Services
                 </Link>
               </li>
             </ul>
@@ -96,7 +112,7 @@ export default function Footer() {
                   href="/contact"
                   className="hover:text-[#7CFC00]"
                 >
-                  07412 840023
+                  {siteConfig.phoneDisplay}
                 </Link>
               </li>
 
@@ -106,7 +122,7 @@ export default function Footer() {
                   href="/contact"
                   className="hover:text-[#7CFC00]"
                 >
-                  Leq.1993@icloud.com
+                  {siteConfig.links.email}
                 </Link>
               </li>
 
@@ -116,7 +132,7 @@ export default function Footer() {
                   href="/contact"
                   className="hover:text-[#7CFC00]"
                 >
-                  Mobile service covering Birmingham and surrounding areas
+                  {siteConfig.location} and surrounding areas
                 </Link>
               </li>
             </ul>
@@ -129,18 +145,7 @@ export default function Footer() {
         {/* Bottom bar */}
         <div className="py-6 flex flex-col md:flex-row justify-between items-center gap-4 text-sm text-gray-500">
           <div>
-            Design & Develop by{" "}
-            <a
-              href="https://linkedo.co.uk/"
-              target="_blank"
-              rel="nofollow noopener noreferrer"
-              className="text-[#7CFC00] hover:text-[#6DD600] transition-colors duration-300"
-            >
-              Linkedo
-            </a>
-          </div>
-          <div>
-            © 2026 Meli's Mobile Tyre Fitting. All rights reserved.
+            © 2026 {siteConfig.name}. All rights reserved.
           </div>
         </div>
       </div>

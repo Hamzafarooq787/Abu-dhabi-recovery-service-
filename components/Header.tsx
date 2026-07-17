@@ -19,7 +19,7 @@ export default function Header() {
       <Link href="/" className="flex items-center">
         <Image
           src="/logo.png"
-          alt="Meli's Mobile Tyre"
+          alt="Abu Dhabi Recovery Service"
           width={180}
           height={60}
           className="h-12 w-auto"
@@ -45,7 +45,7 @@ export default function Header() {
       <Link href="/" className="flex items-center">
         <Image
           src="/logo.png"
-          alt="Meli's Mobile Tyre"
+          alt="Abu Dhabi Recovery Service"
           width={160}
           height={53}
           className="h-10 w-auto"

@@ -17,40 +17,46 @@ import Footer from "@/components/Footer";
 export default function ServicesPage() {
   const services = [
     {
-      title: "Mobile Tyre Fitting",
-      text: "Professional tyre fitting completed at your home, workplace, or roadside location.",
+      title: "Recovery Services",
+      text: "Professional vehicle recovery completed at your home, workplace, or roadside location.",
       image: "/services/mobile-tyre-fitting.jpg",
-      href: "/services/mobile-tyre-fitting",
+      href: "/services/recovery-services",
     },
     {
-      title: "Tyre Replacement",
-      text: "Safe removal and replacement of worn or damaged tyres with careful fitting checks.",
+      title: "Towing Services",
+      text: "Safe towing for cars, vans, and light commercial vehicles to your chosen destination.",
       image: "/services/tyre-replacement.jpg",
-      href: "/services/tyre-replacement",
+      href: "/services/towing-services",
     },
     {
-      title: "Emergency Tyre Call-Out",
-      text: "Rapid assistance when driving is unsafe due to a puncture or tyre failure.",
+      title: "Roadside Assistance",
+      text: "Rapid assistance when driving is unsafe due to a breakdown or emergency.",
       image: "/services/emergency-tyre.jpg",
-      href: "/services/emergency-tyre-call-out",
+      href: "/services/roadside-assistance",
     },
     {
-      title: "Same-Day Service",
-      text: "Get your tyres fitted the same day without the hassle of visiting a garage.",
+      title: "Fuel Delivery",
+      text: "Run out of fuel? We deliver directly to your location without the hassle of a tow.",
       image: "/services/Same-day.jpg",
-      href: "/services/same-day-service",
+      href: "/services/fuel-delivery",
     },
     {
-      title: "24/7 Mobile Assistance",
-      text: "Round-the-clock support for urgent tyre problems across Birmingham.",
+      title: "Tyre Change",
+      text: "Round-the-clock support for punctures and tyre problems across Abu Dhabi.",
       image: "/services/service-3.jpg",
-      href: "/services/24-7-mobile-assistance",
+      href: "/services/tyre-change",
     },
     {
-      title: "Run-Flat Tyre Fitting",
-      text: "Specialist handling and installation of run-flat tyres to manufacturer standards.",
+      title: "Battery Boost",
+      text: "Jump-starts and battery replacement to get you moving again quickly.",
       image: "/services/service-5.jpg",
-      href: "/services/run-flat-tyre-fitting",
+      href: "/services/battery-boost",
+    },
+    {
+      title: "Off-Road Recovery Services",
+      text: "Specialist recovery for vehicles stuck in sand, mud, or rough terrain.",
+      image: "/services/service-2.jpg",
+      href: "/services/off-road-recovery-services",
     },
   ];
 
@@ -71,12 +77,12 @@ export default function ServicesPage() {
 
           <div className="relative max-w-7xl mx-auto px-6 sm:px-10 lg:px-16">
             <h1 className="text-4xl md:text-6xl font-extrabold text-black max-w-3xl">
-              Mobile Tyre Services Across Birmingham
+              Vehicle Recovery Services Across Abu Dhabi
             </h1>
 
             <p className="mt-6 text-lg text-black/80 max-w-2xl">
-              Professional on-site tyre services delivered wherever you are.
-              From emergencies to scheduled fittings, we bring the solution to you.
+              Professional on-site recovery services delivered wherever you are.
+              From emergencies to off-road recovery, we bring the solution to you.
             </p>
           </div>
         </section>
@@ -89,8 +95,8 @@ export default function ServicesPage() {
                 Our Complete Service Range
               </h2>
               <p className="mt-4 text-gray-400 max-w-2xl mx-auto">
-                Reliable mobile tyre solutions for cars, vans, and light commercial
-                vehicles across Birmingham.
+                Reliable vehicle recovery solutions for cars, vans, and light commercial
+                vehicles across Abu Dhabi.
               </p>
             </div>
 
@@ -179,7 +185,7 @@ export default function ServicesPage() {
           style={{ backgroundColor: siteConfig.brandColor }}
         >
           <h2 className="text-2xl md:text-3xl font-bold text-black">
-            Ready to Book Your Mobile Tyre Service?
+            Ready to Book Your Recovery Service?
           </h2>
 
           <p className="mt-4 text-black/80">
@@ -192,7 +198,7 @@ export default function ServicesPage() {
               className="flex items-center gap-3 bg-black text-white px-8 py-4 rounded-full font-semibold"
             >
               <Phone size={18} />
-              Call 07412 840023
+              Call {siteConfig.phoneDisplay}
             </a>
 
             <a

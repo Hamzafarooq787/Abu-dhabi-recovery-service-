@@ -5,40 +5,46 @@ import { siteConfig } from "../config/site";
 
 const services = [
   {
-    title: "Mobile Tyre Replacement",
-    desc: "On-site tyre replacement carried out at your home, workplace, or roadside using professional-grade equipment.",
+    title: "Recovery Services",
+    desc: "Fast, professional vehicle recovery wherever you are stranded across Abu Dhabi.",
     image: "/services/service-1.jpg",
-    href: "/services/mobile-tyre-replacement",
+    href: "/services/recovery-services",
   },
   {
-    title: "Emergency Tyre Call-Out",
-    desc: "Rapid tyre assistance when you are unable to drive safely due to punctures or tyre damage.",
+    title: "Towing Services",
+    desc: "Safe towing for cars, vans, and light commercial vehicles to your destination of choice.",
     image: "/services/service-2.jpg",
-    href: "/services/emergency-tyre-call-out",
+    href: "/services/towing-services",
   },
   {
-    title: "24/7 Tyre Assistance",
-    desc: "Round-the-clock support for urgent tyre problems, day or night, whenever you need help.",
+    title: "Roadside Assistance",
+    desc: "Round-the-clock roadside support for breakdowns and emergencies, day or night.",
     image: "/services/service-3.jpg",
-    href: "/services/24-7-tyre-assistance",
+    href: "/services/roadside-assistance",
   },
   {
-    title: "Same-Day Tyre Fitting",
-    desc: "Book early and get your tyres fitted the same day without visiting a garage or workshop.",
+    title: "Fuel Delivery",
+    desc: "Run out of fuel? We deliver directly to your location so you can get back on the road.",
     image: "/services/service-4.jpg",
-    href: "/services/same-day-tyre-fitting",
+    href: "/services/fuel-delivery",
   },
   {
-    title: "Run-Flat Tyre Specialists",
-    desc: "Correct and safe installation of run-flat tyres carried out by experienced professionals.",
+    title: "Tyre Change",
+    desc: "Quick, on-site tyre changes carried out by experienced professionals.",
     image: "/services/tyre-replacement1.jpg",
-    href: "/services/run-flat-tyre-fitting",
+    href: "/services/tyre-change",
   },
   {
-    title: "Roadside Tyre Support",
-    desc: "Complete roadside tyre solutions including puncture issues and full tyre replacement on-site.",
+    title: "Battery Boost",
+    desc: "Flat battery? We jump-start or replace it on the spot to get you moving again.",
     image: "/services/service-6.jpg",
-    href: "/services/roadside-tyre-support",
+    href: "/services/battery-boost",
+  },
+  {
+    title: "Off-Road Recovery Services",
+    desc: "Specialist recovery for vehicles stuck off-road in sand, mud, or rough terrain.",
+    image: "/services/mobile-tyre-fitting.jpg",
+    href: "/services/off-road-recovery-services",
   },
 ];
 
@@ -50,11 +56,11 @@ export default function ServicesSection() {
         {/* Heading */}
         <div className="text-center mb-16">
           <h2 className="text-3xl md:text-4xl font-bold text-white">
-            Our Mobile Tyre Services
+            Our Recovery Services
           </h2>
           <p className="mt-4 text-gray-400 max-w-2xl mx-auto">
-            Professional mobile tyre fitting services delivered directly to your
-            location, designed for speed, safety, and convenience.
+            Professional vehicle recovery services delivered directly to your
+            location across Abu Dhabi, designed for speed, safety, and convenience.
           </p>
         </div>
 
@@ -114,7 +120,7 @@ export default function ServicesSection() {
 
                 {/* Learn more */}
                 <div className="mt-5">
-                  <Link href="/services">
+                  <Link href={service.href}>
                     <span
                       className="
         inline-block text-sm font-semibold cursor-pointer

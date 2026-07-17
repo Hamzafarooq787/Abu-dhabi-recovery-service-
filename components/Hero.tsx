@@ -29,7 +29,7 @@ export default function Hero() {
         
         {/* Main line - Adjusted top spacing */}
         <span className="block text-[2.5rem] sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl 2xl:text-8xl mb-2 sm:mb-3 md:mb-4">
-          Mobile Tyre Fitting
+          Abu Dhabi Recovery Service
         </span>
 
         {/* Sub line */}
@@ -37,15 +37,15 @@ export default function Hero() {
           className="block font-black text-[1.8rem] sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl 2xl:text-7xl"
           style={{ color: siteConfig.brandColor }}
         >
-          At Your Location, When You Need It.
+          Anywhere In Abu Dhabi, Anytime You Need Us.
         </span>
       </h1>
 
       {/* Description */}
       <p className="mt-6 sm:mt-8 md:mt-10 text-lg sm:text-xl md:text-2xl font-semibold max-w-2xl text-gray-200 leading-relaxed px-4">
-        On-demand mobile tyre fitting for cars and vans. Whether you are at home,
-        work, or roadside, we come fully equipped to get you moving safely without
-        delay.
+        On-demand vehicle recovery, towing, and roadside assistance across
+        Musaffah and Abu Dhabi. Whether you are stranded on the road or off-road,
+        we come fully equipped to get you moving safely without delay.
       </p>
 
       {/* CTA Buttons */}

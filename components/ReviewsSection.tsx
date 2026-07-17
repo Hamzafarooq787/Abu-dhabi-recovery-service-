@@ -4,28 +4,28 @@ import { siteConfig } from "../config/site";
 
 const reviews = [
   {
-    name: "James T.",
-    text: "Called late evening with a flat tyre and they arrived quicker than expected. Very professional and efficient service.",
+    name: "Ahmed K.",
+    text: "Called late evening after my car broke down in Musaffah and the recovery team arrived quicker than expected. Very professional and efficient service.",
   },
   {
-    name: "Sarah M.",
-    text: "Booked while at work and the technician came directly to my office. Tyres fitted smoothly with no hassle at all.",
+    name: "Sara M.",
+    text: "Booked while at work and the team came directly to my office car park. Vehicle towed smoothly with no hassle at all.",
   },
   {
     name: "David C.",
-    text: "Had a puncture on the motorway. Clear pricing, quick response, and great workmanship. Would definitely use again.",
+    text: "Got stuck off-road in the desert. Clear pricing, quick response, and great workmanship. Would definitely use again.",
   },
   {
-    name: "Emma R.",
-    text: "Explained everything clearly and completed the tyre fitting at my home. Friendly and reliable service.",
+    name: "Fatima R.",
+    text: "Explained everything clearly and completed the battery boost at my home. Friendly and reliable service.",
   },
   {
     name: "Mohammed A.",
-    text: "Emergency call-out during the night and they actually showed up fast. Very impressed with the response time.",
+    text: "Emergency roadside assistance during the night and they actually showed up fast. Very impressed with the response time.",
   },
   {
-    name: "Lisa J.",
-    text: "Easy booking, confirmation received quickly, and tyres fitted the same day. Smooth experience from start to finish.",
+    name: "Layla J.",
+    text: "Easy booking, confirmation received quickly, and fuel delivered the same day. Smooth experience from start to finish.",
   },
 ];
 
@@ -40,7 +40,7 @@ export default function ReviewsSection() {
             What Customers Say About Us
           </h2>
           <p className="mt-4 text-gray-400 max-w-2xl mx-auto">
-            Feedback from drivers who trust our mobile tyre fitting service for
+            Feedback from drivers who trust our vehicle recovery service for
             fast, on-site assistance.
           </p>
         </div>

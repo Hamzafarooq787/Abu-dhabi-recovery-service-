@@ -13,12 +13,12 @@ export default function CtaSection() {
 
         {/* Heading */}
         <h2 className="text-3xl md:text-4xl font-bold text-black">
-          Need Mobile Tyre Fitting Today?
+          Need Vehicle Recovery Today?
         </h2>
 
         <p className="mt-4 text-black/80 max-w-2xl mx-auto">
-          Get fast, professional mobile tyre fitting at your location. We are
-          available day and night for urgent tyre issues.
+          Get fast, professional vehicle recovery at your location. We are
+          available day and night for urgent breakdowns.
         </p>
 
         {/* Buttons */}
@@ -39,7 +39,7 @@ export default function CtaSection() {
             "
           >
             <Phone size={18} />
-            Call 07412 840023
+            Call {siteConfig.phoneDisplay}
           </a>
 
           {/* WhatsApp Button */}

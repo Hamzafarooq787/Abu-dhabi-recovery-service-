@@ -13,11 +13,11 @@ export default function ContactPage() {
       <section className="bg-[#7CFC00] py-24">
         <div className="max-w-7xl mx-auto px-6 sm:px-10 lg:px-16">
           <h1 className="text-4xl md:text-5xl font-bold text-black max-w-3xl">
-            Get in Touch With Meli’s Mobile Tyre Fitting
+            Get in Touch With Abu Dhabi Recovery Service
           </h1>
           <p className="mt-6 text-black/80 max-w-2xl text-lg">
-            Need urgent tyre assistance or want to schedule a visit?  
-            Our mobile technicians are available across Birmingham, day and night.
+            Need urgent vehicle recovery or want to schedule a visit?
+            Our recovery team is available across Abu Dhabi, day and night.
           </p>
         </div>
       </section>
@@ -42,15 +42,15 @@ export default function ContactPage() {
               <Phone className="text-[#7CFC00]" size={28} />
               <h3 className="mt-6 text-xl font-semibold text-white">Call Us</h3>
               <p className="mt-3 text-gray-400 text-sm">
-                Speak directly with our team for immediate tyre assistance or pricing.
+                Speak directly with our team for immediate recovery assistance or pricing.
               </p>
 
               <a
-                href="tel:07412840023"
-                onClick={() => (window as any).gtag_report_conversion?.('tel:07412840023')}
+                href={siteConfig.links.telLink}
+                onClick={() => (window as any).gtag_report_conversion?.(siteConfig.links.telLink)}
                 className="inline-flex items-center gap-2 mt-6 text-black bg-[#7CFC00] px-5 py-3 rounded-full text-sm font-semibold"
               >
-                07412 840023 <ArrowRight size={16} />
+                {siteConfig.phoneDisplay} <ArrowRight size={16} />
               </a>
             </div>
 
@@ -59,12 +59,12 @@ export default function ContactPage() {
               <MessageCircle className="text-[#7CFC00]" size={28} />
               <h3 className="mt-6 text-xl font-semibold text-white">WhatsApp</h3>
               <p className="mt-3 text-gray-400 text-sm">
-                Message us for quick replies, tyre availability, and location confirmation.
+                Message us for quick replies, availability, and location confirmation.
               </p>
 
               <a
-                href="https://wa.me/447365350710"
-                onClick={() => (window as any).gtag_report_conversion?.('https://wa.me/447365350710')}
+                href={siteConfig.links.whatsappLink}
+                onClick={() => (window as any).gtag_report_conversion?.(siteConfig.links.whatsappLink)}
                 target="_blank"
                 className="inline-flex items-center gap-2 mt-6 text-black bg-[#7CFC00] px-5 py-3 rounded-full text-sm font-semibold"
               >
@@ -81,10 +81,10 @@ export default function ContactPage() {
               </p>
 
               <a
-                href="mailto:Leq.1993@icloud.com"
+                href={`mailto:${siteConfig.links.email}`}
                 className="inline-flex items-center gap-2 mt-6 text-[#7CFC00] text-sm font-medium"
               >
-                Leq.1993@icloud.com <ArrowRight size={16} />
+                {siteConfig.links.email} <ArrowRight size={16} />
               </a>
             </div>
 
@@ -102,7 +102,7 @@ export default function ContactPage() {
             <h3 className="mt-6 text-2xl font-semibold text-white">Service Availability</h3>
 
             <ul className="mt-6 space-y-3 text-sm text-gray-400">
-              <li>Emergency tyre services: <span className="text-white">24/7</span></li>
+              <li>Emergency recovery services: <span className="text-white">24/7</span></li>
               <li>Scheduled bookings: <span className="text-white">Flexible times</span></li>
               <li>Phone & WhatsApp support: <span className="text-white">Always available</span></li>
             </ul>
@@ -116,12 +116,12 @@ export default function ContactPage() {
             </h3>
 
             <p className="mt-4 text-sm text-gray-400">
-              We operate as a fully mobile tyre fitting service, covering Birmingham and nearby
-              surrounding areas. Wherever you are, we come directly to you.
+              We operate as a fully mobile vehicle recovery service, based in {siteConfig.location} and covering
+              all of Abu Dhabi and nearby surrounding areas. Wherever you are, we come directly to you.
             </p>
 
             <p className="mt-4 text-sm text-white">
-              Mobile service • No garage visits • All Birmingham postcodes
+              Mobile service • On-site recovery • All Abu Dhabi areas
             </p>
           </div>
 
@@ -132,15 +132,15 @@ export default function ContactPage() {
       <section className="bg-[#7CFC00] py-20">
         <div className="max-w-7xl mx-auto px-6 sm:px-10 lg:px-16 text-center">
           <h2 className="text-3xl md:text-4xl font-bold text-black">
-            Need Immediate Tyre Assistance?
+            Need Immediate Vehicle Recovery?
           </h2>
           <p className="mt-4 text-black/80 max-w-2xl mx-auto">
-            Don’t wait roadside. Call now and we’ll dispatch a mobile technician to your location.
+            Don’t wait roadside. Call now and we’ll dispatch a recovery team to your location.
           </p>
 
           <a
-            href="tel:07412840023"
-            onClick={() => (window as any).gtag_report_conversion?.('tel:07412840023')}
+            href={siteConfig.links.telLink}
+            onClick={() => (window as any).gtag_report_conversion?.(siteConfig.links.telLink)}
             className="inline-flex items-center gap-2 mt-8 bg-black text-[#7CFC00] px-8 py-4 rounded-full font-semibold"
           >
             Call Now <ArrowRight size={18} />
