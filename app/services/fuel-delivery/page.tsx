@@ -9,13 +9,13 @@ export default function Page() {
     <Header/>
     <ServiceDetailPage
       eyebrow="Always Available"
-      title="24/7 Mobile Tyre Assistance in Birmingham"
-      subtitle="Day or night, when tyre problems can’t wait. We keep the process straightforward, confirm details quickly, and aim for a smooth resolution."
+      title="Fuel Delivery in Abu Dhabi"
+      subtitle="Run out of fuel? We deliver directly to your location so you can get back on the road without waiting for a tow."
       heroImage="/services/service-3.jpg"
       highlights={[
-        "Support available day and night",
+        "Fuel delivered directly to your location",
         "Simple contact and quick coordination",
-        "Coverage across Birmingham areas",
+        "Coverage across Abu Dhabi areas",
         "Safety-first approach",
       ]}
       bullets={[
@@ -25,18 +25,18 @@ export default function Page() {
         },
         {
           title: "Prepared Arrival",
-          text: "We arrive with equipment and the right approach to handle urgent tyre situations efficiently.",
+          text: "We arrive with the right fuel type and equipment to get you moving quickly.",
         },
         {
           title: "Confidence to Continue",
           text: "Before you move, we do the checks that matter so you can drive away safely.",
         },
       ]}
-      ctaTitle="Need help right now?"
-      ctaText="Call or WhatsApp your location and tyre size. We’ll guide you and arrange support quickly."
+      ctaTitle="Need fuel right now?"
+      ctaText="Call or WhatsApp your location and fuel type. We'll guide you and arrange delivery quickly."
       brandColor={siteConfig.brandColor}
-      phoneHref="tel:+447412840023"
-      whatsappHref="https://wa.me/447412840023"
+      phoneHref={siteConfig.links.telLink}
+      whatsappHref={siteConfig.links.whatsappLink}
     />
     <Footer/>
     </>

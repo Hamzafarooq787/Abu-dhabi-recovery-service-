@@ -9,23 +9,23 @@ export default function Page() {
     <Header/>
     <ServiceDetailPage
       eyebrow="24/7 Support"
-      title="Emergency Tyre Call-Out in Birmingham"
-      subtitle="If it’s not safe to continue driving, we come to you. Quick coordination, professional service, and a focus on getting you mobile again."
+      title="Roadside Assistance in Abu Dhabi"
+      subtitle="If it's not safe to continue driving, we come to you. Quick coordination, professional service, and a focus on getting you mobile again."
       heroImage="/services/emergency-tyre.jpg"
       highlights={[
-        "Fast response for urgent tyre issues",
-        "Support across Birmingham postcodes",
+        "Fast response for urgent breakdowns",
+        "Support across Abu Dhabi",
         "Roadside-friendly process",
         "Clear ETA and next steps",
       ]}
       bullets={[
         {
           title: "Rapid Call Handling",
-          text: "We take the essentials quickly: location, tyre size, and the situation—then confirm the plan.",
+          text: "We take the essentials quickly: location, vehicle, and the situation—then confirm the plan.",
         },
         {
           title: "On-Site Resolution",
-          text: "Whether it’s a replacement or immediate support, we arrive equipped to handle common emergency scenarios.",
+          text: "Whether it's a quick fix or immediate support, we arrive equipped to handle common breakdown scenarios.",
         },
         {
           title: "Safe Finish",
@@ -33,10 +33,10 @@ export default function Page() {
         },
       ]}
       ctaTitle="Stuck right now?"
-      ctaText="Call or WhatsApp your location. We’ll confirm the quickest option and support you immediately."
+      ctaText="Call or WhatsApp your location. We'll confirm the quickest option and support you immediately."
       brandColor={siteConfig.brandColor}
-      phoneHref="tel:+447412840023"
-      whatsappHref="https://wa.me/447412840023"
+      phoneHref={siteConfig.links.telLink}
+      whatsappHref={siteConfig.links.whatsappLink}
     />
     <Footer/>
     </>

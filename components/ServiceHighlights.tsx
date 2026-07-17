@@ -23,7 +23,7 @@ export default function ServiceHighlights() {
             </h3>
 
             <p className="text-sm text-gray-400 mt-2 leading-relaxed">
-              Quick attendance with efficient mobile tyre fitting, reducing
+              Quick attendance with efficient vehicle recovery, reducing
               downtime and getting you moving without unnecessary delays.
             </p>
           </div>
@@ -42,8 +42,8 @@ export default function ServiceHighlights() {
             </h3>
 
             <p className="text-sm text-gray-400 mt-2 leading-relaxed">
-              Mobile service available across Birmingham and nearby areas,
-              covering homes, workplaces, and roadside locations.
+              Mobile service available across Musaffah, Abu Dhabi and nearby
+              areas, covering homes, workplaces, and roadside locations.
             </p>
           </div>
 
@@ -61,7 +61,7 @@ export default function ServiceHighlights() {
             </h3>
 
             <p className="text-sm text-gray-400 mt-2 leading-relaxed">
-              Fully equipped mobile tyre fitting handled by experienced
+              Fully equipped vehicle recovery handled by experienced
               professionals with safety and quality as top priorities.
             </p>
           </div>

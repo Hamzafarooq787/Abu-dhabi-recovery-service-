@@ -18,12 +18,12 @@ type Props = {
   ctaText: string;
 
   brandColor: string;
-  phoneHref: string;     // e.g. "tel:+447412840023"
-  whatsappHref: string;  // e.g. "https://wa.me/447412840023"
+  phoneHref: string;     // e.g. "tel:+971581154109"
+  whatsappHref: string;  // e.g. "https://wa.me/971581154109"
 };
 
 export default function ServiceDetailPage({
-  eyebrow = "Service in Birmingham",
+  eyebrow = "Service in Abu Dhabi",
   title,
   subtitle,
   heroImage,
@@ -166,7 +166,7 @@ export default function ServiceDetailPage({
                 </div>
 
                 <div className="mt-6 text-xs text-gray-500">
-                  Mobile service covering Birmingham and surrounding areas.
+                  Mobile service covering Musaffah, Abu Dhabi and surrounding areas.
                 </div>
               </div>
             </aside>

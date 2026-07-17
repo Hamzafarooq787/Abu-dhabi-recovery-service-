@@ -8,12 +8,12 @@ export default function Page() {
     <>
     <Header/>
     <ServiceDetailPage
-      eyebrow="Mobile Tyre Near Me"
-      title="Tyre Replacement in Birmingham"
-      subtitle="Worn, damaged, or unsafe tyres replaced at your location. We focus on correct fitment, smooth driving, and dependable safety checks."
-      heroImage="/services/tyre-replacement.jpg"
+      eyebrow="Tyre Near Me"
+      title="Tyre Change in Abu Dhabi"
+      subtitle="Worn, damaged, or punctured tyres replaced at your location. We focus on correct fitment, smooth driving, and dependable safety checks."
+      heroImage="/services/service-5.jpg"
       highlights={[
-        "Replace worn or damaged tyres",
+        "Replace worn or damaged tyres on-site",
         "Correct fitment with safety-first approach",
         "Convenient on-site service",
         "Clear guidance on the next steps",
@@ -32,11 +32,11 @@ export default function Page() {
           text: "We check for secure fitment, correct pressure, and a clean finish so you can drive with confidence.",
         },
       ]}
-      ctaTitle="Need a replacement tyre?"
-      ctaText="Share your tyre size and location. We’ll confirm options and arrange a time that works for you."
+      ctaTitle="Need a tyre changed?"
+      ctaText="Share your tyre size and location. We'll confirm options and arrange a time that works for you."
       brandColor={siteConfig.brandColor}
-      phoneHref="tel:+447412840023"
-      whatsappHref="https://wa.me/447412840023"
+      phoneHref={siteConfig.links.telLink}
+      whatsappHref={siteConfig.links.whatsappLink}
     />
     <Footer/>
     </>

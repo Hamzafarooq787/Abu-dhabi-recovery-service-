@@ -25,12 +25,12 @@ export default function AboutUsPage() {
 
           <div className="relative max-w-7xl mx-auto px-6 sm:px-10 lg:px-16">
             <h1 className="text-4xl md:text-6xl font-extrabold text-black max-w-3xl">
-              About Meli’s Mobile Tyre Fitting
+              About Abu Dhabi Recovery Service
             </h1>
             <p className="mt-6 text-lg text-black/80 max-w-2xl">
-              A modern mobile tyre service built around speed, convenience, and
+              A modern vehicle recovery service built around speed, convenience, and
               professional workmanship — delivered directly to your location
-              anywhere in Birmingham.
+              anywhere in Abu Dhabi.
             </p>
           </div>
         </section>
@@ -42,14 +42,14 @@ export default function AboutUsPage() {
             <div>
               <h2 className="text-3xl font-bold mb-6">Who We Are</h2>
               <p className="text-gray-400 leading-relaxed mb-4">
-                Meli’s Mobile Tyre Fitting was created to remove the stress and
-                inconvenience of traditional garage visits. We provide on-site
-                tyre services for drivers who value time, safety, and reliability.
+                Abu Dhabi Recovery Service was created to remove the stress and
+                inconvenience of being stranded on the road. We provide on-site
+                recovery services for drivers who value time, safety, and reliability.
               </p>
               <p className="text-gray-400 leading-relaxed mb-4">
                 Whether you are parked at home, at work, or dealing with an
-                unexpected breakdown, our mobile technicians come fully equipped
-                to resolve your tyre issue on the spot anywhere in Birmingham.
+                unexpected breakdown, our recovery team comes fully equipped
+                to resolve your issue on the spot anywhere in Abu Dhabi.
               </p>
               <p className="text-gray-400 leading-relaxed">
                 Every service is handled with care, precision, and a clear focus
@@ -60,7 +60,7 @@ export default function AboutUsPage() {
             <div className="relative rounded-3xl overflow-hidden border border-white/10">
               <Image
                 src="/background/about-us.jpg"
-                alt="Mobile tyre service van"
+                alt="Vehicle recovery service"
                 width={700}
                 height={500}
                 className="object-cover w-full h-full"
@@ -75,7 +75,7 @@ export default function AboutUsPage() {
             <div className="text-center mb-16">
               <h2 className="text-3xl font-bold">What We Do</h2>
               <p className="mt-4 text-gray-400 max-w-2xl mx-auto">
-                End-to-end mobile tyre solutions designed for safety, efficiency,
+                End-to-end vehicle recovery solutions designed for safety, efficiency,
                 and complete peace of mind.
               </p>
             </div>
@@ -83,11 +83,11 @@ export default function AboutUsPage() {
             <div className="grid md:grid-cols-2 gap-12">
               <div>
                 <h3 className="text-xl font-semibold mb-3">
-                  Mobile Tyre Fitting
+                  Recovery & Towing
                 </h3>
                 <p className="text-gray-400">
-                  We install new tyres at your location using professional-grade
-                  tools, ensuring correct fitting, balancing, and safety checks.
+                  We recover and tow vehicles from your location using professional-grade
+                  equipment, ensuring safe loading, transport, and drop-off.
                 </p>
               </div>
 
@@ -96,18 +96,18 @@ export default function AboutUsPage() {
                   Emergency Assistance
                 </h3>
                 <p className="text-gray-400">
-                  For punctures or sudden tyre failures, our rapid-response mobile
-                  service gets you moving again quickly and safely.
+                  For breakdowns, flat tyres, or dead batteries, our rapid-response
+                  team gets you moving again quickly and safely.
                 </p>
               </div>
 
               <div>
                 <h3 className="text-xl font-semibold mb-3">
-                  Specialist Tyre Services
+                  Off-Road Recovery
                 </h3>
                 <p className="text-gray-400">
-                  From run-flat tyres to modern vehicle systems, our technicians
-                  handle specialist requirements with precision.
+                  From desert sand to rough terrain, our technicians
+                  handle specialist off-road recovery with precision.
                 </p>
               </div>
 
@@ -116,7 +116,7 @@ export default function AboutUsPage() {
                   Roadside Support
                 </h3>
                 <p className="text-gray-400">
-                  Comprehensive roadside tyre support covering Birmingham and nearby
+                  Comprehensive roadside support covering Abu Dhabi and nearby
                   areas, available day and night.
                 </p>
               </div>
@@ -189,23 +189,23 @@ export default function AboutUsPage() {
         >
           <div className="max-w-3xl mx-auto px-6 text-center text-black">
             <h2 className="text-3xl font-bold mb-4">
-              Experience a Better Mobile Tyre Service
+              Experience a Better Recovery Service
             </h2>
             <p className="mb-8">
-              Professional mobile tyre fitting across Birmingham. One call is all it
+              Professional vehicle recovery across Abu Dhabi. One call is all it
               takes to get expert help at your location.
             </p>
 
             <div className="flex justify-center gap-4 flex-wrap">
               <a
-                href="tel:07412840023"
+                href={siteConfig.links.telLink}
                 className="bg-black text-white px-6 py-3 rounded-full font-semibold"
               >
-                Call 07412 840023
+                Call {siteConfig.phoneDisplay}
               </a>
 
               <a
-                href="https://wa.me/447365350710"
+                href={siteConfig.links.whatsappLink}
                 className="border border-black px-6 py-3 rounded-full font-semibold"
               >
                 WhatsApp Us

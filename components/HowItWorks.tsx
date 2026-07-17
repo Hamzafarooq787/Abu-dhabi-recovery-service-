@@ -6,17 +6,17 @@ const steps = [
   {
     step: "01",
     title: "Get in Touch",
-    desc: "Call or message us with your tyre requirements and location. Our team will confirm availability and timing.",
+    desc: "Call or message us with your situation and location. Our team will confirm availability and timing.",
   },
   {
     step: "02",
     title: "We Arrive On-Site",
-    desc: "A fully equipped mobile technician travels to your chosen location, ready to carry out the job.",
+    desc: "A fully equipped recovery team travels to your location anywhere in Abu Dhabi, ready to carry out the job.",
   },
   {
     step: "03",
-    title: "Tyres Fitted Safely",
-    desc: "Your tyres are fitted, checked, and secured on-site so you can continue your journey with confidence.",
+    title: "Vehicle Recovered Safely",
+    desc: "Your vehicle is recovered, checked, and secured so you can continue your journey with confidence.",
   },
 ];
 
@@ -31,8 +31,8 @@ export default function HowItWorks() {
             How It Works
           </h2>
           <p className="mt-4 text-gray-400 max-w-2xl mx-auto">
-            Getting your tyres replaced is simple. Just three clear steps and
-            we take care of the rest.
+            Getting your vehicle recovered is simple. Just three clear steps
+            and we take care of the rest.
           </p>
         </div>
 

@@ -5,11 +5,11 @@ import { siteConfig } from "../config/site";
 const points = [
   {
     title: "Fully Mobile Operation",
-    desc: "No garage visits required. Our mobile service reaches you at home, work, or roadside locations.",
+    desc: "No need to wait at a garage. Our recovery team reaches you at home, work, or roadside locations.",
   },
   {
     title: "Qualified Professionals",
-    desc: "Experienced technicians trained to handle modern vehicles and all tyre types safely.",
+    desc: "Experienced technicians trained to handle all vehicle types and recovery situations safely.",
   },
   {
     title: "Clear & Fair Pricing",
@@ -17,7 +17,7 @@ const points = [
   },
   {
     title: "24/7 Availability",
-    desc: "Round-the-clock support for urgent tyre issues, including evenings and weekends.",
+    desc: "Round-the-clock support for urgent recovery issues, including evenings and weekends.",
   },
 ];
 
@@ -32,12 +32,12 @@ export default function WhyChooseUs() {
           {/* Left Content */}
           <div className="max-w-xl mx-auto lg:mx-0">
             <h2 className="text-3xl md:text-4xl font-bold text-white">
-              Why Choose Our Mobile Tyre Service?
+              Why Choose Our Recovery Service?
             </h2>
 
             <p className="mt-6 text-gray-400">
               We focus on convenience, reliability, and safety by delivering
-              professional tyre fitting services directly to your location.
+              professional vehicle recovery services directly to your location.
             </p>
 
             <div className="mt-10 space-y-6">
@@ -68,7 +68,7 @@ export default function WhyChooseUs() {
             <div className="overflow-hidden rounded-2xl">
               <img
                 src="/background/Why-choose-us.jpg"
-                alt="Mobile tyre technician"
+                alt="Vehicle recovery technician"
                 className="
                   w-full h-[420px] object-cover
                   transition-transform duration-500
