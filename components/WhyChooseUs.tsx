@@ -65,7 +65,7 @@ export default function WhyChooseUs() {
           </div>
 
           {/* Right Visual */}
-          <div className="relative max-w-xl mx-auto lg:mx-0">
+          <div className="relative w-full max-w-xl mx-auto lg:mx-0">
             <div className="relative w-full h-[420px] rounded-2xl overflow-hidden">
               <Image
                 src="/images/why-choose-us.webp"
