@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import Image from "next/image";
 import Link from "next/link";
 import { siteConfig } from "../config/site";
 
@@ -15,16 +16,15 @@ export default function Header() {
     <div className="hidden md:grid grid-cols-3 items-center">
       
       {/* Left: Logo */}
-      <Link href="/" className="flex items-center gap-2">
-        <span
-          className="flex h-10 w-10 shrink-0 items-center justify-center rounded-lg font-black text-black"
-          style={{ backgroundColor: siteConfig.brandColor }}
-        >
-          A
-        </span>
-        <span className="text-base font-bold leading-tight text-white whitespace-nowrap">
-          Abu Dhabi Recovery Service
-        </span>
+      <Link href="/" className="flex items-center">
+        <Image
+          src="/images/logo.webp"
+          alt="Abu Dhabi Recovery Service"
+          width={911}
+          height={296}
+          className="h-11 w-auto"
+          priority
+        />
       </Link>
 
       {/* Center: Navigation */}
@@ -42,16 +42,15 @@ export default function Header() {
     <div className="flex md:hidden items-center justify-between">
 
       {/* Logo */}
-      <Link href="/" className="flex items-center gap-2">
-        <span
-          className="flex h-9 w-9 shrink-0 items-center justify-center rounded-lg font-black text-black"
-          style={{ backgroundColor: siteConfig.brandColor }}
-        >
-          A
-        </span>
-        <span className="text-sm font-bold leading-tight text-white">
-          Abu Dhabi Recovery Service
-        </span>
+      <Link href="/" className="flex items-center">
+        <Image
+          src="/images/logo.webp"
+          alt="Abu Dhabi Recovery Service"
+          width={911}
+          height={296}
+          className="h-9 w-auto"
+          priority
+        />
       </Link>
 
       {/* Mobile buttons */}
