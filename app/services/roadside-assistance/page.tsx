@@ -11,7 +11,8 @@ export default function Page() {
       eyebrow="24/7 Support"
       title="Roadside Assistance in Abu Dhabi"
       subtitle="If it's not safe to continue driving, we come to you. Quick coordination, professional service, and a focus on getting you mobile again."
-      heroBackground="linear-gradient(150deg, #0b0d10 0%, #2a1200 60%, #FF7A29 150%)"
+      heroImage="/images/roadside-assistance.webp"
+      heroImageAlt="Recovery technician assisting a driver at the roadside"
       highlights={[
         "Fast response for urgent breakdowns",
         "Support across Abu Dhabi",

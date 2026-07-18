@@ -1,9 +1,10 @@
 "use client";
 
+import Image from "next/image";
 import Footer from "@/components/Footer";
 import Header from "@/components/Header";
 import { siteConfig } from "@/config/site";
-import { ShieldCheck, Wrench, Clock, Users, Truck } from "lucide-react";
+import { ShieldCheck, Wrench, Clock, Users } from "lucide-react";
 
 export default function AboutUsPage() {
   return (
@@ -12,20 +13,28 @@ export default function AboutUsPage() {
       <main className="bg-black text-white">
 
         {/* HERO */}
-        <section className="relative min-h-[70vh] flex items-center">
+        <section className="relative min-h-[70vh] flex items-center overflow-hidden">
+          <Image
+            src="/images/about-hero.png"
+            alt="Mobile recovery technician fitting a tyre at a customer's driveway"
+            fill
+            priority
+            sizes="100vw"
+            className="object-cover"
+          />
           <div
             className="absolute inset-0"
             style={{
-              backgroundColor: siteConfig.brandColor,
-              opacity: 0.85,
+              background:
+                "linear-gradient(100deg, rgba(11,13,16,0.9) 30%, rgba(255,106,26,0.55) 100%)",
             }}
           />
 
           <div className="relative max-w-7xl mx-auto px-6 sm:px-10 lg:px-16">
-            <h1 className="text-4xl md:text-6xl font-extrabold text-black max-w-3xl">
+            <h1 className="text-4xl md:text-6xl font-extrabold text-white max-w-3xl">
               About Abu Dhabi Recovery Service
             </h1>
-            <p className="mt-6 text-lg text-black/80 max-w-2xl">
+            <p className="mt-6 text-lg text-gray-200 max-w-2xl">
               A modern vehicle recovery service built around speed, convenience, and
               professional workmanship — delivered directly to your location
               anywhere in Abu Dhabi.
@@ -55,14 +64,14 @@ export default function AboutUsPage() {
               </p>
             </div>
 
-            <div
-              className="relative rounded-3xl overflow-hidden border border-white/10 h-[500px] flex items-center justify-center"
-              style={{
-                background:
-                  "linear-gradient(135deg, #0b0d10 0%, #2a1200 55%, #FF6A1A 130%)",
-              }}
-            >
-              <Truck className="text-black/20" size={160} strokeWidth={1.2} />
+            <div className="relative rounded-3xl overflow-hidden border border-white/10 h-[500px]">
+              <Image
+                src="/images/about-us.webp"
+                alt="Mobile technician replacing a wheel at a customer's home"
+                fill
+                sizes="(max-width: 1024px) 100vw, 50vw"
+                className="object-cover"
+              />
             </div>
           </div>
         </section>

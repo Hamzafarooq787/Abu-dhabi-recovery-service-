@@ -11,7 +11,8 @@ export default function Page() {
       eyebrow="Towing Near Me"
       title="Towing Services in Abu Dhabi"
       subtitle="Safe, careful towing for cars, vans, and light commercial vehicles to your chosen destination anywhere in Abu Dhabi."
-      heroBackground="radial-gradient(circle at 25% 30%, rgba(255,106,26,0.5) 0%, transparent 55%), linear-gradient(160deg, #0b0d10 0%, #1a1000 100%)"
+      heroImage="/images/towing-services.webp"
+      heroImageAlt="Tow truck transporting a car at sunset"
       highlights={[
         "Towing across Abu Dhabi and surrounding areas",
         "Suitable for cars, vans & light commercial",

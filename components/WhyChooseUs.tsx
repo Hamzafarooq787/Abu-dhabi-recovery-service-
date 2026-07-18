@@ -1,6 +1,6 @@
 "use client";
 
-import { ShieldCheck } from "lucide-react";
+import Image from "next/image";
 import { siteConfig } from "../config/site";
 
 const points = [
@@ -66,14 +66,14 @@ export default function WhyChooseUs() {
 
           {/* Right Visual */}
           <div className="relative max-w-xl mx-auto lg:mx-0">
-            <div
-              className="w-full h-[420px] rounded-2xl flex items-center justify-center"
-              style={{
-                background:
-                  "linear-gradient(135deg, #0b0d10 0%, #2a1200 55%, #FF6A1A 130%)",
-              }}
-            >
-              <ShieldCheck className="text-black/20" size={140} strokeWidth={1.2} />
+            <div className="relative w-full h-[420px] rounded-2xl overflow-hidden">
+              <Image
+                src="/images/why-choose-us.webp"
+                alt="Mobile recovery technician working on a vehicle"
+                fill
+                sizes="(max-width: 1024px) 100vw, 50vw"
+                className="object-cover"
+              />
             </div>
 
             {/* Soft glow */}
