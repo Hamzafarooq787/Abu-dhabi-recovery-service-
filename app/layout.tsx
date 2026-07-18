@@ -7,7 +7,12 @@ const jost = Jost({
   subsets: ["latin"],
 });
 
+const siteUrl = process.env.VERCEL_PROJECT_PRODUCTION_URL
+  ? `https://${process.env.VERCEL_PROJECT_PRODUCTION_URL}`
+  : "http://localhost:3000";
+
 export const metadata: Metadata = {
+  metadataBase: new URL(siteUrl),
   title: "Abu Dhabi Recovery Service - Fast & Reliable Vehicle Recovery",
   description: "Professional vehicle recovery and roadside assistance in Musaffah, Abu Dhabi. Towing, off-road recovery, fuel delivery, tyre change, and battery boost available 24/7.",
   keywords: ["Abu Dhabi recovery service", "car recovery Abu Dhabi", "towing service Abu Dhabi", "roadside assistance", "off road recovery", "fuel delivery", "battery boost", "24/7 recovery service"],
