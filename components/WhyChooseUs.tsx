@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import { siteConfig } from "../config/site";
 
 const points = [
@@ -63,17 +64,15 @@ export default function WhyChooseUs() {
             </div>
           </div>
 
-          {/* Right Image */}
+          {/* Right Visual */}
           <div className="relative max-w-xl mx-auto lg:mx-0">
-            <div className="overflow-hidden rounded-2xl">
-              <img
-                src="/background/Why-choose-us.jpg"
-                alt="Vehicle recovery technician"
-                className="
-                  w-full h-[420px] object-cover
-                  transition-transform duration-500
-                  hover:scale-105
-                "
+            <div className="relative w-full h-[420px] rounded-2xl overflow-hidden">
+              <Image
+                src="/images/why-choose-us.webp"
+                alt="Mobile recovery technician working on a vehicle"
+                fill
+                sizes="(max-width: 1024px) 100vw, 50vw"
+                className="object-cover"
               />
             </div>
 

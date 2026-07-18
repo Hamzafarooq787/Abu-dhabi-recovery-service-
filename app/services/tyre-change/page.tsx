@@ -11,7 +11,8 @@ export default function Page() {
       eyebrow="Tyre Near Me"
       title="Tyre Change in Abu Dhabi"
       subtitle="Worn, damaged, or punctured tyres replaced at your location. We focus on correct fitment, smooth driving, and dependable safety checks."
-      heroImage="/services/service-5.jpg"
+      heroImage="/images/tyre-change.webp"
+      heroImageAlt="Technician changing a tyre roadside in Abu Dhabi"
       highlights={[
         "Replace worn or damaged tyres on-site",
         "Correct fitment with safety-first approach",

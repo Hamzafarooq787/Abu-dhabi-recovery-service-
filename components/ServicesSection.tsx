@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import Link from "next/link";
 import { siteConfig } from "../config/site";
 
@@ -7,43 +8,43 @@ const services = [
   {
     title: "Recovery Services",
     desc: "Fast, professional vehicle recovery wherever you are stranded across Abu Dhabi.",
-    image: "/services/service-1.jpg",
+    image: "/images/recovery-services.webp",
     href: "/services/recovery-services",
   },
   {
     title: "Towing Services",
     desc: "Safe towing for cars, vans, and light commercial vehicles to your destination of choice.",
-    image: "/services/service-2.jpg",
+    image: "/images/towing-services.webp",
     href: "/services/towing-services",
   },
   {
     title: "Roadside Assistance",
     desc: "Round-the-clock roadside support for breakdowns and emergencies, day or night.",
-    image: "/services/service-3.jpg",
+    image: "/images/roadside-assistance.webp",
     href: "/services/roadside-assistance",
   },
   {
     title: "Fuel Delivery",
     desc: "Run out of fuel? We deliver directly to your location so you can get back on the road.",
-    image: "/services/service-4.jpg",
+    image: "/images/fuel-delivery.webp",
     href: "/services/fuel-delivery",
   },
   {
     title: "Tyre Change",
     desc: "Quick, on-site tyre changes carried out by experienced professionals.",
-    image: "/services/tyre-replacement1.jpg",
+    image: "/images/tyre-change.webp",
     href: "/services/tyre-change",
   },
   {
     title: "Battery Boost",
     desc: "Flat battery? We jump-start or replace it on the spot to get you moving again.",
-    image: "/services/service-6.jpg",
+    image: "/images/battery-boost.webp",
     href: "/services/battery-boost",
   },
   {
     title: "Off-Road Recovery Services",
     desc: "Specialist recovery for vehicles stuck off-road in sand, mud, or rough terrain.",
-    image: "/services/mobile-tyre-fitting.jpg",
+    image: "/images/off-road-recovery.webp",
     href: "/services/off-road-recovery-services",
   },
 ];
@@ -79,20 +80,18 @@ export default function ServicesSection() {
                 border border-white/5
                 transition-all duration-300
                 hover:-translate-y-2
-                hover:shadow-[0_0_30px_rgba(124,252,0,0.15)]
-                hover:border-[#7CFC00]
+                hover:shadow-[0_0_30px_rgba(255,106,26,0.15)]
+                hover:border-[#FF6A1A]
               "
             >
-              {/* Image */}
-              <div className="overflow-hidden">
-                <div
-                  className="
-                    h-64 sm:h-72
-                    bg-cover bg-center
-                    transition-transform duration-500
-                    group-hover:scale-110
-                  "
-                  style={{ backgroundImage: `url(${service.image})` }}
+              {/* Visual */}
+              <div className="relative h-64 sm:h-72 overflow-hidden">
+                <Image
+                  src={service.image}
+                  alt={service.title}
+                  fill
+                  sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
+                  className="object-cover transition-transform duration-500 group-hover:scale-110"
                 />
               </div>
 
@@ -102,7 +101,7 @@ export default function ServicesSection() {
                   className="
                     text-lg font-semibold text-white
                     transition-colors duration-300
-                    group-hover:text-[#7CFC00]
+                    group-hover:text-[#FF6A1A]
                   "
                 >
                   {service.title}
@@ -125,7 +124,7 @@ export default function ServicesSection() {
                       className="
         inline-block text-sm font-semibold cursor-pointer
         transition-all duration-300
-        group-hover:text-[#7CFC00]
+        group-hover:text-[#FF6A1A]
         group-hover:tracking-wide
       "
                       style={{ color: siteConfig.brandColor }}

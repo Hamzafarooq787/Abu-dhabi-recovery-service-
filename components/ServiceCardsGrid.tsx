@@ -5,8 +5,8 @@ import { ArrowRight, Wrench } from "lucide-react";
 
 type ServiceCardItem = {
   title: string;
-  description: string; // placeholder for now (Step 2 me rewrite karenge)
-  image: string;
+  description: string;
+  background: string; // CSS background value, e.g. a gradient
   href: string;
   Icon?: React.ElementType;
 };
@@ -21,10 +21,10 @@ type Props = {
 function ServiceCard({
   title,
   description,
-  image,
+  background,
   href,
   Icon = Wrench,
-  brandColor = "#facc15", // fallback yellow
+  brandColor = "#FF6A1A", // fallback orange
 }: ServiceCardItem & { brandColor?: string }) {
   return (
     <div
@@ -36,16 +36,16 @@ function ServiceCard({
         hover:-translate-y-2 hover:border-white/20
       "
     >
-      {/* Image */}
+      {/* Visual */}
       <div className="relative">
         <div
           className="
             h-[220px] sm:h-[240px] lg:h-[230px]
-            w-full bg-cover bg-center
+            w-full
             transition-transform duration-500
             group-hover:scale-[1.05]
           "
-          style={{ backgroundImage: `url(${image})` }}
+          style={{ background }}
         />
 
         {/* Dark overlay so text/icons always readable */}

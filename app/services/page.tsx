@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import Link from "next/link";
 import {
   Phone,
@@ -19,43 +20,43 @@ export default function ServicesPage() {
     {
       title: "Recovery Services",
       text: "Professional vehicle recovery completed at your home, workplace, or roadside location.",
-      image: "/services/mobile-tyre-fitting.jpg",
+      image: "/images/recovery-services.webp",
       href: "/services/recovery-services",
     },
     {
       title: "Towing Services",
       text: "Safe towing for cars, vans, and light commercial vehicles to your chosen destination.",
-      image: "/services/tyre-replacement.jpg",
+      image: "/images/towing-services.webp",
       href: "/services/towing-services",
     },
     {
       title: "Roadside Assistance",
       text: "Rapid assistance when driving is unsafe due to a breakdown or emergency.",
-      image: "/services/emergency-tyre.jpg",
+      image: "/images/roadside-assistance.webp",
       href: "/services/roadside-assistance",
     },
     {
       title: "Fuel Delivery",
       text: "Run out of fuel? We deliver directly to your location without the hassle of a tow.",
-      image: "/services/Same-day.jpg",
+      image: "/images/fuel-delivery.webp",
       href: "/services/fuel-delivery",
     },
     {
       title: "Tyre Change",
       text: "Round-the-clock support for punctures and tyre problems across Abu Dhabi.",
-      image: "/services/service-3.jpg",
+      image: "/images/tyre-change.webp",
       href: "/services/tyre-change",
     },
     {
       title: "Battery Boost",
       text: "Jump-starts and battery replacement to get you moving again quickly.",
-      image: "/services/service-5.jpg",
+      image: "/images/battery-boost.webp",
       href: "/services/battery-boost",
     },
     {
       title: "Off-Road Recovery Services",
       text: "Specialist recovery for vehicles stuck in sand, mud, or rough terrain.",
-      image: "/services/service-2.jpg",
+      image: "/images/off-road-recovery.webp",
       href: "/services/off-road-recovery-services",
     },
   ];
@@ -106,13 +107,16 @@ export default function ServicesPage() {
                   key={i}
                   className="group bg-[#12151b] rounded-2xl overflow-hidden
                   border border-white/5 transition-all duration-300
-                  hover:-translate-y-2 hover:border-[#7CFC00]"
+                  hover:-translate-y-2 hover:border-[#FF6A1A]"
                 >
-                  {/* Image */}
-                  <div className="relative overflow-hidden">
-                    <div
-                      className="h-64 md:h-72 bg-cover bg-center transition-transform duration-500 group-hover:scale-110"
-                      style={{ backgroundImage: `url(${item.image})` }}
+                  {/* Visual */}
+                  <div className="relative h-64 md:h-72 overflow-hidden">
+                    <Image
+                      src={item.image}
+                      alt={item.title}
+                      fill
+                      sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
+                      className="object-cover transition-transform duration-500 group-hover:scale-110"
                     />
                     <div className="absolute inset-0 bg-black/30" />
 

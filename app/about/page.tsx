@@ -1,11 +1,10 @@
 "use client";
 
+import Image from "next/image";
 import Footer from "@/components/Footer";
 import Header from "@/components/Header";
 import { siteConfig } from "@/config/site";
 import { ShieldCheck, Wrench, Clock, Users } from "lucide-react";
-import Image from "next/image";
-import Link from "next/link";
 
 export default function AboutUsPage() {
   return (
@@ -14,20 +13,28 @@ export default function AboutUsPage() {
       <main className="bg-black text-white">
 
         {/* HERO */}
-        <section className="relative min-h-[70vh] flex items-center">
+        <section className="relative min-h-[70vh] flex items-center overflow-hidden">
+          <Image
+            src="/images/about-hero.png"
+            alt="Mobile recovery technician fitting a tyre at a customer's driveway"
+            fill
+            priority
+            sizes="100vw"
+            className="object-cover"
+          />
           <div
             className="absolute inset-0"
             style={{
-              backgroundColor: siteConfig.brandColor,
-              opacity: 0.85,
+              background:
+                "linear-gradient(100deg, rgba(11,13,16,0.9) 30%, rgba(255,106,26,0.55) 100%)",
             }}
           />
 
           <div className="relative max-w-7xl mx-auto px-6 sm:px-10 lg:px-16">
-            <h1 className="text-4xl md:text-6xl font-extrabold text-black max-w-3xl">
+            <h1 className="text-4xl md:text-6xl font-extrabold text-white max-w-3xl">
               About Abu Dhabi Recovery Service
             </h1>
-            <p className="mt-6 text-lg text-black/80 max-w-2xl">
+            <p className="mt-6 text-lg text-gray-200 max-w-2xl">
               A modern vehicle recovery service built around speed, convenience, and
               professional workmanship — delivered directly to your location
               anywhere in Abu Dhabi.
@@ -57,13 +64,13 @@ export default function AboutUsPage() {
               </p>
             </div>
 
-            <div className="relative rounded-3xl overflow-hidden border border-white/10">
+            <div className="relative rounded-3xl overflow-hidden border border-white/10 h-[500px]">
               <Image
-                src="/background/about-us.jpg"
-                alt="Vehicle recovery service"
-                width={700}
-                height={500}
-                className="object-cover w-full h-full"
+                src="/images/about-us.webp"
+                alt="Mobile technician replacing a wheel at a customer's home"
+                fill
+                sizes="(max-width: 1024px) 100vw, 50vw"
+                className="object-cover"
               />
             </div>
           </div>
@@ -136,8 +143,8 @@ export default function AboutUsPage() {
 
               <div className="text-center">
                 <div className="mx-auto w-14 h-14 rounded-full flex items-center justify-center mb-6"
-                  style={{ backgroundColor: "rgba(124,252,0,0.15)" }}>
-                  <ShieldCheck className="text-[#7CFC00]" />
+                  style={{ backgroundColor: "rgba(255,106,26,0.15)" }}>
+                  <ShieldCheck className="text-[#FF6A1A]" />
                 </div>
                 <h4 className="font-semibold mb-2">Reliability</h4>
                 <p className="text-gray-400 text-sm">
@@ -147,8 +154,8 @@ export default function AboutUsPage() {
 
               <div className="text-center">
                 <div className="mx-auto w-14 h-14 rounded-full flex items-center justify-center mb-6"
-                  style={{ backgroundColor: "rgba(124,252,0,0.15)" }}>
-                  <Wrench className="text-[#7CFC00]" />
+                  style={{ backgroundColor: "rgba(255,106,26,0.15)" }}>
+                  <Wrench className="text-[#FF6A1A]" />
                 </div>
                 <h4 className="font-semibold mb-2">Professional Standards</h4>
                 <p className="text-gray-400 text-sm">
@@ -158,8 +165,8 @@ export default function AboutUsPage() {
 
               <div className="text-center">
                 <div className="mx-auto w-14 h-14 rounded-full flex items-center justify-center mb-6"
-                  style={{ backgroundColor: "rgba(124,252,0,0.15)" }}>
-                  <Clock className="text-[#7CFC00]" />
+                  style={{ backgroundColor: "rgba(255,106,26,0.15)" }}>
+                  <Clock className="text-[#FF6A1A]" />
                 </div>
                 <h4 className="font-semibold mb-2">Fast Response</h4>
                 <p className="text-gray-400 text-sm">
@@ -169,8 +176,8 @@ export default function AboutUsPage() {
 
               <div className="text-center">
                 <div className="mx-auto w-14 h-14 rounded-full flex items-center justify-center mb-6"
-                  style={{ backgroundColor: "rgba(124,252,0,0.15)" }}>
-                  <Users className="text-[#7CFC00]" />
+                  style={{ backgroundColor: "rgba(255,106,26,0.15)" }}>
+                  <Users className="text-[#FF6A1A]" />
                 </div>
                 <h4 className="font-semibold mb-2">Customer First</h4>
                 <p className="text-gray-400 text-sm">
@@ -185,7 +192,7 @@ export default function AboutUsPage() {
         {/* CTA */}
         <section
           className="py-24"
-          style={{ backgroundColor: "#7CFC00" }}
+          style={{ backgroundColor: "#FF6A1A" }}
         >
           <div className="max-w-3xl mx-auto px-6 text-center text-black">
             <h2 className="text-3xl font-bold mb-4">

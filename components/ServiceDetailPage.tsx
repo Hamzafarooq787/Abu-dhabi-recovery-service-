@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import Link from "next/link";
 import { ArrowRight, CheckCircle2, PhoneCall, MessageCircle } from "lucide-react";
 
@@ -10,6 +11,7 @@ type Props = {
   title: string;
   subtitle: string;
   heroImage: string;
+  heroImageAlt: string;
 
   highlights: string[];
   bullets: Bullet[];
@@ -27,6 +29,7 @@ export default function ServiceDetailPage({
   title,
   subtitle,
   heroImage,
+  heroImageAlt,
   highlights,
   bullets,
   ctaTitle,
@@ -39,9 +42,13 @@ export default function ServiceDetailPage({
     <main className="bg-black text-white">
       {/* Hero */}
       <section className="relative">
-        <div
-          className="absolute inset-0 bg-cover bg-center"
-          style={{ backgroundImage: `url(${heroImage})` }}
+        <Image
+          src={heroImage}
+          alt={heroImageAlt}
+          fill
+          priority
+          sizes="100vw"
+          className="object-cover"
         />
         <div className="absolute inset-0 bg-black/70" />
 
