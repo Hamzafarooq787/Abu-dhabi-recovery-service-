@@ -3,10 +3,22 @@
 import { useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
+import { usePathname } from "next/navigation";
 import { siteConfig } from "../config/site";
+
+const navLinks = [
+  { href: "/", label: "Home" },
+  { href: "/services", label: "Services" },
+  { href: "/about", label: "About Us" },
+  { href: "/contact", label: "Contact" },
+];
 
 export default function Header() {
   const [open, setOpen] = useState(false);
+  const pathname = usePathname();
+
+  const isActive = (href: string) =>
+    href === "/" ? pathname === "/" : pathname.startsWith(href);
 
   return (
     <header className="w-full bg-black/90 backdrop-blur-md text-white fixed top-0 left-0 right-0 z-50 border-b border-white/10">
@@ -29,10 +41,19 @@ export default function Header() {
 
       {/* Center: Navigation */}
       <nav className="flex justify-center gap-10 text-base font-medium">
-        <Link href="/" className="text-[#FF6A1A] hover:text-[#FF6A1A]/80 transition-colors">Home</Link>
-        <Link href="/services" className="hover:text-[#FF6A1A] transition-colors">Services</Link>
-        <Link href="/about" className="hover:text-[#FF6A1A] transition-colors">About Us</Link>
-        <Link href="/contact" className="hover:text-[#FF6A1A] transition-colors">Contact</Link>
+        {navLinks.map(({ href, label }) => (
+          <Link
+            key={href}
+            href={href}
+            className={
+              isActive(href)
+                ? "text-[#FF6A1A]"
+                : "hover:text-[#FF6A1A] transition-colors"
+            }
+          >
+            {label}
+          </Link>
+        ))}
       </nav>
 
      
@@ -72,35 +93,20 @@ export default function Header() {
   {open && (
     <div className="md:hidden bg-black/95 backdrop-blur-lg border-t border-white/20 shadow-2xl">
       <nav className="flex flex-col px-4 py-6 gap-5">
-        <Link 
-          href="/" 
-          onClick={() => setOpen(false)} 
-          className="py-3 px-4 text-lg font-medium hover:text-[#FF6A1A] hover:bg-white/5 rounded-lg transition-colors"
-        >
-          Home
-        </Link>
-        <Link 
-          href="/services" 
-          onClick={() => setOpen(false)} 
-          className="py-3 px-4 text-lg font-medium hover:text-[#FF6A1A] hover:bg-white/5 rounded-lg transition-colors"
-        >
-          Services
-        </Link>
-        <Link 
-          href="/about" 
-          onClick={() => setOpen(false)} 
-          className="py-3 px-4 text-lg font-medium hover:text-[#FF6A1A] hover:bg-white/5 rounded-lg transition-colors"
-        >
-          About Us
-        </Link>
-        <Link 
-          href="/contact" 
-          onClick={() => setOpen(false)} 
-          className="py-3 px-4 text-lg font-medium hover:text-[#FF6A1A] hover:bg-white/5 rounded-lg transition-colors"
-        >
-          Contact
-        </Link>
-        
+        {navLinks.map(({ href, label }) => (
+          <Link
+            key={href}
+            href={href}
+            onClick={() => setOpen(false)}
+            className={
+              "py-3 px-4 text-lg font-medium hover:bg-white/5 rounded-lg transition-colors " +
+              (isActive(href) ? "text-[#FF6A1A]" : "hover:text-[#FF6A1A]")
+            }
+          >
+            {label}
+          </Link>
+        ))}
+
         {/* Mobile CTA in menu */}
         <div className="mt-4 pt-4 border-t border-white/20">
           <a

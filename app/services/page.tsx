@@ -4,6 +4,8 @@ import Image from "next/image";
 import Link from "next/link";
 import {
   Phone,
+  PhoneCall,
+  MessageCircle,
   Clock,
   ShieldCheck,
   Wrench,
@@ -67,24 +69,62 @@ export default function ServicesPage() {
 
       <main className="bg-[#0b0d10] text-white">
         {/* ================= HERO ================= */}
-        <section className="relative min-h-[70vh] flex items-center">
+        <section className="relative min-h-[60vh] flex items-center pt-24 overflow-hidden">
+          <Image
+            src="/images/towing-services.webp"
+            alt="Tow truck transporting a car at sunset in Abu Dhabi"
+            fill
+            priority
+            sizes="100vw"
+            className="object-cover"
+          />
           <div
             className="absolute inset-0"
             style={{
-              backgroundColor: siteConfig.brandColor,
-              opacity: 0.85,
+              background:
+                "linear-gradient(100deg, rgba(11,13,16,0.94) 25%, rgba(255,106,26,0.5) 100%)",
             }}
           />
 
-          <div className="relative max-w-7xl mx-auto px-6 sm:px-10 lg:px-16">
-            <h1 className="text-4xl md:text-6xl font-extrabold text-black max-w-3xl">
+          <div className="relative max-w-7xl mx-auto px-6 sm:px-10 lg:px-16 py-16">
+            <div
+              className="inline-flex items-center gap-2 rounded-full border px-4 py-1.5 text-xs sm:text-sm font-semibold mb-6"
+              style={{ borderColor: "rgba(255,106,26,0.4)", color: siteConfig.brandColor }}
+            >
+              <span className="h-1.5 w-1.5 rounded-full" style={{ backgroundColor: siteConfig.brandColor }} />
+              Trusted Recovery Partner in Abu Dhabi
+            </div>
+
+            <h1 className="text-4xl md:text-6xl font-extrabold text-white max-w-3xl leading-tight">
               Vehicle Recovery Services Across Abu Dhabi
             </h1>
 
-            <p className="mt-6 text-lg text-black/80 max-w-2xl">
+            <p className="mt-6 text-lg text-gray-300 max-w-2xl">
               Professional on-site recovery services delivered wherever you are.
               From emergencies to off-road recovery, we bring the solution to you.
             </p>
+
+            <div className="mt-8 flex flex-col sm:flex-row gap-4">
+              <a
+                href={siteConfig.links.telLink}
+                onClick={() => (window as any).gtag_report_conversion?.(siteConfig.links.telLink)}
+                className="inline-flex items-center justify-center gap-2 px-7 py-3.5 rounded-lg font-bold text-black transition hover:opacity-90"
+                style={{ backgroundColor: siteConfig.brandColor }}
+              >
+                <PhoneCall size={18} />
+                Call {siteConfig.phoneDisplay}
+              </a>
+
+              <a
+                href={siteConfig.links.whatsappLink}
+                onClick={() => (window as any).gtag_report_conversion?.(siteConfig.links.whatsappLink)}
+                target="_blank"
+                className="inline-flex items-center justify-center gap-2 px-7 py-3.5 rounded-lg font-bold border border-white/20 text-white transition hover:bg-white/10"
+              >
+                <MessageCircle size={18} />
+                WhatsApp Us
+              </a>
+            </div>
           </div>
         </section>
 
