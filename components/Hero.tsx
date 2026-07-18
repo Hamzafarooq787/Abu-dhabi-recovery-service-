@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import { CheckCircle2, Clock, MapPin, Phone, PhoneCall, ShieldCheck } from "lucide-react";
 import { siteConfig } from "../config/site";
 import FloatingContactIcons from "./FloatingContactIcons";
@@ -21,13 +22,23 @@ export default function Hero() {
   return (
     <>
       {/* HERO */}
-      <section
-        className="relative w-full pt-28 md:pt-36 pb-16 md:pb-24"
-        style={{
-          background:
-            "radial-gradient(circle at 15% 15%, rgba(255,106,26,0.18) 0%, transparent 40%), linear-gradient(160deg, #0b0d10 0%, #14100a 55%, #1a1300 100%)",
-        }}
-      >
+      <section className="relative w-full pt-28 md:pt-36 pb-16 md:pb-24 overflow-hidden">
+        <Image
+          src="/images/hero-bg.webp"
+          alt="Tow truck assisting a driver on the roadside"
+          fill
+          priority
+          sizes="100vw"
+          className="object-cover"
+        />
+        <div
+          className="absolute inset-0"
+          style={{
+            background:
+              "linear-gradient(160deg, rgba(11,13,16,0.92) 0%, rgba(20,16,10,0.9) 55%, rgba(26,19,0,0.85) 100%)",
+          }}
+        />
+
         <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-white">
           <div className="grid grid-cols-1 lg:grid-cols-[1.15fr_0.85fr] gap-12 lg:gap-16 items-center">
 

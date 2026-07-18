@@ -11,7 +11,8 @@ export default function Page() {
       eyebrow="Always Available"
       title="Fuel Delivery in Abu Dhabi"
       subtitle="Run out of fuel? We deliver directly to your location so you can get back on the road without waiting for a tow."
-      heroBackground="radial-gradient(circle at 75% 25%, rgba(255,106,26,0.45) 0%, transparent 55%), linear-gradient(170deg, #0b0d10 0%, #1f1400 100%)"
+      heroImage="/images/fuel-delivery.webp"
+      heroImageAlt="Tow truck assisting a stranded vehicle at night"
       highlights={[
         "Fuel delivered directly to your location",
         "Simple contact and quick coordination",

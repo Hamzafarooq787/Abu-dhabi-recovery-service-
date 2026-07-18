@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import Link from "next/link";
 import {
   Phone,
@@ -19,43 +20,43 @@ export default function ServicesPage() {
     {
       title: "Recovery Services",
       text: "Professional vehicle recovery completed at your home, workplace, or roadside location.",
-      background: "linear-gradient(135deg, #0b0d10 0%, #331a00 55%, #FF6A1A 140%)",
+      image: "/images/recovery-services.webp",
       href: "/services/recovery-services",
     },
     {
       title: "Towing Services",
       text: "Safe towing for cars, vans, and light commercial vehicles to your chosen destination.",
-      background: "radial-gradient(circle at 25% 30%, rgba(255,106,26,0.5) 0%, transparent 55%), linear-gradient(160deg, #0b0d10 0%, #1a1000 100%)",
+      image: "/images/towing-services.webp",
       href: "/services/towing-services",
     },
     {
       title: "Roadside Assistance",
       text: "Rapid assistance when driving is unsafe due to a breakdown or emergency.",
-      background: "linear-gradient(150deg, #0b0d10 0%, #2a1200 60%, #FF7A29 150%)",
+      image: "/images/roadside-assistance.webp",
       href: "/services/roadside-assistance",
     },
     {
       title: "Fuel Delivery",
       text: "Run out of fuel? We deliver directly to your location without the hassle of a tow.",
-      background: "radial-gradient(circle at 75% 25%, rgba(255,106,26,0.45) 0%, transparent 55%), linear-gradient(170deg, #0b0d10 0%, #1f1400 100%)",
+      image: "/images/fuel-delivery.webp",
       href: "/services/fuel-delivery",
     },
     {
       title: "Tyre Change",
       text: "Round-the-clock support for punctures and tyre problems across Abu Dhabi.",
-      background: "linear-gradient(140deg, #0b0d10 0%, #2e1400 55%, #FF6A1A 145%)",
+      image: "/images/tyre-change.webp",
       href: "/services/tyre-change",
     },
     {
       title: "Battery Boost",
       text: "Jump-starts and battery replacement to get you moving again quickly.",
-      background: "radial-gradient(circle at 30% 70%, rgba(255,122,41,0.5) 0%, transparent 55%), linear-gradient(160deg, #0b0d10 0%, #1a1300 100%)",
+      image: "/images/battery-boost.webp",
       href: "/services/battery-boost",
     },
     {
       title: "Off-Road Recovery Services",
       text: "Specialist recovery for vehicles stuck in sand, mud, or rough terrain.",
-      background: "linear-gradient(145deg, #0b0d10 0%, #331a00 50%, #FF6A1A 135%)",
+      image: "/images/off-road-recovery.webp",
       href: "/services/off-road-recovery-services",
     },
   ];
@@ -109,10 +110,13 @@ export default function ServicesPage() {
                   hover:-translate-y-2 hover:border-[#FF6A1A]"
                 >
                   {/* Visual */}
-                  <div className="relative overflow-hidden">
-                    <div
-                      className="h-64 md:h-72 transition-transform duration-500 group-hover:scale-110"
-                      style={{ background: item.background }}
+                  <div className="relative h-64 md:h-72 overflow-hidden">
+                    <Image
+                      src={item.image}
+                      alt={item.title}
+                      fill
+                      sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
+                      className="object-cover transition-transform duration-500 group-hover:scale-110"
                     />
                     <div className="absolute inset-0 bg-black/30" />
 
