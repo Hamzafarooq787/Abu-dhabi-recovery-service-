@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import Link from "next/link";
 import { Phone, Mail, MapPin } from "lucide-react";
 import { siteConfig } from "../config/site";
@@ -14,16 +15,14 @@ export default function Footer() {
 
           {/* Brand */}
           <div>
-            <Link href="/" className="inline-flex items-center gap-2 mb-4">
-              <span
-                className="flex h-9 w-9 shrink-0 items-center justify-center rounded-lg font-black text-black"
-                style={{ backgroundColor: siteConfig.brandColor }}
-              >
-                A
-              </span>
-              <span className="text-base font-bold text-white">
-                Abu Dhabi Recovery Service
-              </span>
+            <Link href="/" className="inline-flex items-center mb-4">
+              <Image
+                src="/images/logo.webp"
+                alt="Abu Dhabi Recovery Service"
+                width={911}
+                height={296}
+                className="h-10 w-auto"
+              />
             </Link>
 
             <p className="mt-4 text-sm leading-relaxed">
