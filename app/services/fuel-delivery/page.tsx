@@ -12,7 +12,7 @@ export default function Page() {
       title="Fuel Delivery in Abu Dhabi"
       subtitle="Run out of fuel? We deliver directly to your location so you can get back on the road without waiting for a tow."
       heroImage="/images/fuel-delivery.webp"
-      heroImageAlt="Tow truck assisting a stranded vehicle at night"
+      heroImageAlt="Technician delivering fuel to a stranded vehicle in Abu Dhabi"
       highlights={[
         "Fuel delivered directly to your location",
         "Simple contact and quick coordination",

@@ -12,7 +12,7 @@ export default function Page() {
       title="Battery Boost in Abu Dhabi"
       subtitle="Flat battery? We jump-start it on the spot, or fit a replacement, so you can get back on the road quickly and safely."
       heroImage="/images/battery-boost.webp"
-      heroImageAlt="Mobile technician working on a vehicle roadside"
+      heroImageAlt="Technician jump-starting a car battery in Abu Dhabi"
       highlights={[
         "Jump-starts and battery replacement",
         "Correct handling for all vehicle types",
